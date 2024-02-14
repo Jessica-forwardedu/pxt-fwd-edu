@@ -273,6 +273,12 @@ basic.forever(function () {
 ```
 ## Step 18
 Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||fwdMotors:Turn 5 in place||`` block.
+
+~hint Why did we do this?
+  -  Using the pause block is telling our code to wait
+  -  This means the code will wait before checking the conditions again
+hint~
+
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
