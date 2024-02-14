@@ -203,6 +203,12 @@ basic.forever(function () {
 ```
 ## Step 15
 Change ``||fwdMotors:Turn 0||`` to ``||fwdMotors:5||``
+
+~hint Why did we do this?
+  -  We are now telling the code how much to turn
+  - Within the forever block the code will always check if the condition is met
+hint~
+
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
