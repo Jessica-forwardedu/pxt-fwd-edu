@@ -227,6 +227,13 @@ basic.forever(function () {
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50||`` block inside 2nd
 ``||logic:if||`` ``||fwdSensors:line2 state is o||`` ``||logic:then||`` condition.
 Change the ``||fwdMotors:Drive forward 50||`` to ``||fwdMotors:20||``
+
+~hint Why did we do this?
+  -  We are now telling the code to drive forward if on the line
+  -  We changed the speed from 50 to 20 
+  -  You can make it faster or slower
+hint~
+
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
