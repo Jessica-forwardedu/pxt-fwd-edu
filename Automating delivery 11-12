@@ -178,9 +178,15 @@ basic.forever(function () {
         }
 })
 ```
-## Step 14
+# Step 14
 Click ``||fwdMotors: Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` block inside 1st ``||logic: if||`` 
 ``||fwdSensors:line1 state is •||`` ``||logic:then||`` condition.
+
+~hint Why did we do this?
+  -  We are now telling the code what to do when on the line
+  - We are telling the code to turn in place if on the line
+hint~
+
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
