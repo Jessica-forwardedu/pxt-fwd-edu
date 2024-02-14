@@ -36,9 +36,16 @@ fwdMotors.leftServo,
 fwdMotors.leftServo,
 )
 ```
+```
 ## Step 7
 Change the ``||fwdMotors:right motor to rightServo||``. 
 Keep the ``||fwdMotors: left motor to leftServo||``.
+
+~hint Why did we do this?
+  - We can't have code going to the same servo 
+  - This is why we are matching right and left
+hint~
+
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
