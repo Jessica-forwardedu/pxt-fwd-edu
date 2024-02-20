@@ -69,6 +69,24 @@ basic.forever(function () {
     if (true) {
             }
     })
+
+## Step 8
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
+
+~hint Why did we do this?
+  - Using the If/then block means we are giving the code a choice
+  - Placing it in forever means it will never stop happening
+hint~
+
+```blocks
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+)
+basic.forever(function () {
+    if (true) {
+            }
+    })
 ```
 ## Step 9
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 1st ``||logic:if true then||`` block
