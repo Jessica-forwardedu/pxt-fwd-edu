@@ -74,13 +74,10 @@ basic.forever(function () {
     })
     ```
 
-## Step 8
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
+## Step 9
+Click ``||Variables:Variables||``. Click on |Make a Variable| to create a new ``||Variables:Variable||``.  
+Name it ``||Variables:IsDrivingEnabled||``.
 
-~hint Why did we do this?
-  - Using the If/then block means we are giving the code a choice
-  - Placing it in forever means it will never stop happening
-hint~
 
 ```blocks
 fwdMotors.setupDriving(
@@ -92,6 +89,7 @@ basic.forever(function () {
             }
     })
 ```
+
 ## Step 9
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 1st ``||logic:if true then||`` block
 
