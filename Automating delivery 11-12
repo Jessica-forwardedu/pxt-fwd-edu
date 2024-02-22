@@ -366,30 +366,37 @@ basic.forever(function () {
     }
 })
 ```
+## Step 21 
 
-## Step 20
-Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
-block under ``||fwdMotors:Turn -5 in place||`` block.
+Change ``||fwdMotors:Drive forward 50%||`` block to ``||fwdMotors:Drive forward 20%||`` 
+})
+
 ```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
+0
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(5)
-        basic.pause(100)
-    }
-    if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
-        fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
-        basic.pause(100)
-    }
-    if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(-5)
-        basic.pause(100)
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(494)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+        } else {
+        	
+        }
     }
 })
 ```
+
 ## Step 21
 Click ``||fwdMotors:+||`` on ``||fwdMotors:Setup Driving||``
 block inside ``||basic:on start||`` block. Set bias to ``||fwdMotors: 0||``.
