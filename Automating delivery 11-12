@@ -476,3 +476,46 @@ basic.forever(function () {
     }
 })
 ```
+## Step 24
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 2nd ``||logic:if true then||`` block. _Note: Three ``||logic:if true then||`` blocks are used.
+
+~hint Why did we do this?
+  - Using the If/then block means we are giving the code a choice
+  - We are just adding another choice 
+  - Placing it in forever means it will never stop happening
+hint~
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+0
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(494)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+        } else {
+            if (true) {
+            	
+            }
+            if (true) {
+            	
+            }
+            if (true) {
+            	
+            }
+        }
+    }
+})
+```
