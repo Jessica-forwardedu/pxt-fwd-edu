@@ -277,27 +277,36 @@ basic.forever(function () {
 })
 ```
 
-## Step 17
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` block inside 3rd ``||logic:if||``
-``||fwdSensors:line3 state is •||`` ``||logic:then||`` condition. 
-Change the ``||fwdMotors:Turn 0||`` to ``||fwdMotors:-5||``.
-```blocks
+## Step 18 
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is ●||`` to replace ``||logic:true||`` condition of ``||logic:true||`` within the ``||logic:if true then||`` block 
+
+
+```blocks 
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
+0
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(5)
-            }
-    if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
-        fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+        	
+        } else {
+        	
         }
-    if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(-5)
-        }
-})
+    }
+}) 
 ```
+
 ## Step 18
 Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||fwdMotors:Turn 5 in place||`` block.
 
