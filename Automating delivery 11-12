@@ -126,29 +126,27 @@ basic.forever(function () {
 ```
 
 
-## Step 11
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is •||`` to replace ``||logic:true||`` condition of 1st ``||logic:if true then||`` block.
+##Step 12 
+Right click ``||Input:on button A pressed||`` block and duplicate it.
+Change ``||Input:A||`` to ``||Input:B||``.
 
-~hint Why did we do this?
-  - We need to update the logic statment with real world information 
-  - Now we are telling our code to use the line sensor to move
-  - Placing it in forever means it will never stop hchecking
-hint~
-
-```blocks
+```blocks 
+input.onButtonPressed(Button.A, function () {
+	
+})
+input.onButtonPressed(Button.B, function () {
+	
+})
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        }
-    if (true) {
-        }
-    if (true) {
-        }
-})
+    if (IsDrivingEnabled) {
+            }
+    })
 ```
+
 ## Step 12
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line2 state is o||`` to replace ``||logic:true||`` condition of 2nd ``||logic:if true then||`` block. _Note: Use drop down menu to change line number._
 
