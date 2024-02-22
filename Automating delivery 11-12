@@ -90,14 +90,12 @@ basic.forever(function () {
     })
 ```
 
-## Step 11 
-Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||`` block
-on workspace. 
-```blocks 
-input.onButtonPressed(Button.A, function () {
-	
-})
+## Step 10
+Click ``||Variables:Variables||`` drag and drop ``||Variables:IsDrivingEnabled||`` block
+block to replace ``||logic:true||`` condition of ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
 
+
+```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
@@ -106,7 +104,7 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
             }
     })
-```
+ ```
 
 
 ## Step 10
