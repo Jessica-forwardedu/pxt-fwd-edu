@@ -436,7 +436,43 @@ basic.forever(function () {
 })
 ```
 
-## Step 22 @showhint
-``|Download|`` and test your code. The simulator shows how it should work.
-Congratulations on completing your Automated delivery robot! - Go back to the lesson for more activities and extensions.
-![line-servos](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-16-ev-line.gif)
+## Step 23
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 1st ``||logic:if true then||`` block
+
+~hint Why did we do this?
+  - Using the If/then block means we are giving the code a choice
+  - We are just adding another choice 
+  - Placing it in forever means it will never stop happening
+hint~
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+0
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(494)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+        } else {
+            if (true) {
+            	
+            }
+            if (true) {
+            	
+            }
+        }
+    }
+})
+```
