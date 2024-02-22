@@ -240,34 +240,43 @@ basic.forever(function () {
     }
 })
 ```
+## Step 17 
 
-## Step 16
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50||`` block inside 2nd
-``||logic:if||`` ``||fwdSensors:line2 state is o||`` ``||logic:then||`` condition.
-Change the ``||fwdMotors:Drive forward 50||`` to ``||fwdMotors:20||``
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then else||`` block inside the first ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
 
-~hint Why did we do this?
-  -  We are now telling the code to drive forward if on the line
-  -  We changed the speed from 50 to 20 
-  -  You can make it faster or slower
+
+~hint What did this do?
+  - We are now using the variable we just created
+  - Replacing the true condition means the conditional will check for driving instead
 hint~
 
 ```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+
+
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
+0
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(5)
-            }
-    if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
-        fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
+    if (IsDrivingEnabled) {
+        if (true) {
+            
+        } else {
+            
         }
-    if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        }
+    }
 })
 ```
+
 ## Step 17
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` block inside 3rd ``||logic:if||``
 ``||fwdSensors:line3 state is •||`` ``||logic:then||`` condition. 
