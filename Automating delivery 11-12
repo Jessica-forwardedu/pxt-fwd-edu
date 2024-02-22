@@ -313,8 +313,6 @@ Click ``||music:Music||`` drag and drop ``||Music:music.ringTone||`` block withi
 
 
 ```block
-
-
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
     fwdMotors.stop()
@@ -338,29 +336,37 @@ basic.forever(function () {
         }
     }
 })
+```
 
-## Step 19
-Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
-block under ``||fwdMotors:Drive Forward at 20||`` block.
-```blocks
+## Step 20
+ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50%||`` under ``||Music:music.ringTone||`` block within  ``||logic:if||`` ``||fwdSensors: line1 state is ●||``
+``||logic:then||`` condition.
+
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
+0
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(5)
-        basic.pause(100)
-    }
-    if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
-        fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
-        basic.pause(100)
-    }
-    if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(-5)
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(494)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+        } else {
+        	
+        }
     }
 })
 ```
+
 ## Step 20
 Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
 block under ``||fwdMotors:Turn -5 in place||`` block.
