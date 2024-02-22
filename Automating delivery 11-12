@@ -963,5 +963,51 @@ basic.forever(function () {
 })
 
 ```
+## Step 35
+Click ``||fwdMotors:+||`` on ``||fwdMotors:Setup Driving||``
+block inside ``||basic:on start||`` block. Set bias to ``||fwdMotors: 0||``.
+Change ``||basic:pause (ms) 100||`` to ``||basic:500||`` for all 
+``||basic:pause||`` blocks.
+
+~hint What did this do?
+  -  We are not telling the code to wait for longer
+hint~ 
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+0
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(494)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+        } else {
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+                fwdMotors.turn(5)
+                basic.pause(500)
+            }
+            if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
+                fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
+                basic.pause(500)
+            }
+            if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+                fwdMotors.turn(-5)
+                basic.pause(500)
+            }
+        }
+    }
+})
+```
 
 
