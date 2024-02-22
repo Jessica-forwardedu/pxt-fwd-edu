@@ -107,29 +107,24 @@ basic.forever(function () {
  ```
 
 
-## Step 10
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 2nd ``||logic:if true then||`` block. _Note: Three ``||logic:if true then||`` blocks are used._
+## Step 11 
+Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||`` block
+on workspace. 
+```blocks 
+input.onButtonPressed(Button.A, function () {
+	
+})
 
-~hint Why did we do this?
-  - Using the If/then block means we are giving the code a choice
-  - We are just adding another choice 
-  - Placing it in forever means it will never stop happening
-hint~
-
-```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
 )
 basic.forever(function () {
-    if (true) {
+    if (IsDrivingEnabled) {
             }
-    if (true) {
-            }
-    if (true) {
-            }
-})
+    })
 ```
+
 
 ## Step 11
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is •||`` to replace ``||logic:true||`` condition of 1st ``||logic:if true then||`` block.
