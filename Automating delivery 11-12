@@ -216,28 +216,31 @@ basic.forever(function () {
 })
 ```
 
-## Step 15
-Change ``||fwdMotors:Turn 0||`` to ``||fwdMotors:5||``
+## Step 16 
 
-~hint Why did we do this?
-  -  We are now telling the code how much to turn
-  - Within the forever block the code will always check if the condition is met
-hint~
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Stop||`` under ``||Variables:IsDrivingEnabled = false||`` within  ``||Input:on button B pressed||``
 
-```blocks
+```blocks 
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
+0
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        fwdMotors.turn(5)
-        }
-    if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
-            }
-    if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        })
+    if (IsDrivingEnabled) {
+    	
+    }
+})
 ```
+
 ## Step 16
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50||`` block inside 2nd
 ``||logic:if||`` ``||fwdSensors:line2 state is o||`` ``||logic:then||`` condition.
