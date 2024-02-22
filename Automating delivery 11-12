@@ -170,22 +170,29 @@ basic.forever(function () {
 })
 ```
 
-## Step 13
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line3 state is •||`` to replace ``||logic:true||`` condition of 3rd ``||logic:if true then||`` block.  _Note: Use drop down menu to change line number._
+## Step 14 
+Click ``||Logic:Logic||`` drag and drop ``||logic:false|`` to replace 0 in ``||Variables:IsDrivingEnabled = 0||`` within  ``||Input:on button A pressed||``
+
 ```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+})
+input.onButtonPressed(Button.B, function () {
+	
+})
+let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo,
+0
 )
 basic.forever(function () {
-    if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        }
-    if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
-        }
-    if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
-        }
+    if (IsDrivingEnabled) {
+    	
+    }
 })
 ```
+
 # Step 14
 Click ``||fwdMotors: Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` block inside 1st ``||logic: if||`` 
 ``||fwdSensors:line1 state is •||`` ``||logic:then||`` condition.
