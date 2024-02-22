@@ -37,7 +37,7 @@ fwdMotors.leftServo,
 )
 ```
 ```
-## Step 7
+## Step 7 
 Change the ``||fwdMotors:right motor to rightServo||``. 
 Keep the ``||fwdMotors: left motor to leftServo||``.
 
@@ -52,6 +52,7 @@ fwdMotors.leftServo,
 fwdMotors.rightServo,
 )
 ```
+
 ## Step 8
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
 
@@ -69,6 +70,7 @@ basic.forever(function () {
     if (true) {
             }
     })
+
 
 ## Step 8
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
