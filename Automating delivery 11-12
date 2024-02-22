@@ -737,5 +737,50 @@ basic.forever(function () {
     }
 })
 ```
+## Step 30
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50||`` block inside 2nd
+``||logic:if||`` ``||fwdSensors:line2 state is o||`` ``||logic:then||`` condition.
+Change the ``||fwdMotors:Drive forward 50||`` to ``||fwdMotors:20||``
+
+~hint Why did we do this?
+  -  We are now telling the code to drive forward if on the line
+  -  We changed the speed from 50 to 20 
+  -  You can make it faster or slower
+hint~
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+0
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(494)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+        } else {
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+                fwdMotors.turn(5)
+            }
+            if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
+                fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
+            }
+            if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+            	
+            }
+        }
+    }
+})
+```
 
 
