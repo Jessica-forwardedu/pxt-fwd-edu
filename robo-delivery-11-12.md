@@ -126,7 +126,7 @@ basic.forever(function () {
 ```
 
 
-##Step 12 
+## Step 12 
 Right click ``||Input:on button A pressed||`` block and duplicate it.
 Change ``||Input:A||`` to ``||Input:B||``.
 
@@ -343,7 +343,36 @@ basic.forever(function () {
 })
 ```
 ## Step 20 
-Click ``||music:Music||`` drag and drop ``||Music:stopall||`` block under ``||Music:music.ringTone||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
+Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||Music:music.ringTone||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+0
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(262)
+            basic.pause(500)
+        } else {
+        	
+        }
+    }
+})
+```
+
+## Step 21 
+Click ``||music:Music||`` drag and drop ``||Music:stopall||`` block under ``||Music:music.ringTone(262)||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
