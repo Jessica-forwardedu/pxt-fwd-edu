@@ -989,7 +989,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
-
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -999,18 +998,19 @@ fwdMotors.rightServo,
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            music.ringTone(494)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+            music.ringTone(262)
+            basic.pause(500)
+            music.stopAllSounds()
         } else {
             if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
                 fwdMotors.turn(5)
                 basic.pause(500)
             }
-            if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
                 fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
                 basic.pause(500)
             }
-            if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
                 fwdMotors.turn(-5)
                 basic.pause(500)
             }
@@ -1018,6 +1018,7 @@ basic.forever(function () {
     }
 })
 ```
+
 ## Step 36 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automated delivery robot! - Go back to the lesson for more activities and extensions.
