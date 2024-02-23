@@ -313,7 +313,7 @@ basic.forever(function () {
 ```
 
 ## Step 19
-Click ``||music:Music||`` drag and drop ``||Music:music.ringTone||`` block within  ``||logic:if||`` ``||fwdSensors: line1 state is ●||``
+Click ``||music:Music||`` drag and drop ``||Music:music.ringTone||`` block within  ``||logic:if||`` ``||fwdSensors:sonar1 distance is under 0 m||`` 
 ``||logic:then||`` condition.
 
 
@@ -336,6 +336,33 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
             music.ringTone(494)
+        } else {
+        	
+        }
+    }
+})
+```
+## Step 20 
+Click ``||music:Music||`` drag and drop ``||Music:stop all sounds||`` block under ``||Music:music.ringTone||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = false
+    fwdMotors.stop()
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
+})
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+0
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            music.ringTone(262)
+            music.stopAllSounds()
         } else {
         	
         }
