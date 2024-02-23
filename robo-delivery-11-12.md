@@ -402,7 +402,7 @@ basic.forever(function () {
 ```
 
 ## Step 22
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside block within  ``||logic:if||`` ``||fwdSensors: line1 state is ●||``
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside block within  ``||logic:if||`` ```||fwdSensors:sonar1 distance is under 0 m||``
 ``||logic:else||``
 
 
