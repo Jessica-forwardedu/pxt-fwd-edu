@@ -496,7 +496,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
-
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -506,12 +505,10 @@ fwdMotors.rightServo,
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            music.ringTone(494)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+            music.ringTone(262)
+            basic.pause(500)
+            music.stopAllSounds()
         } else {
-            if (true) {
-            	
-            }
             if (true) {
             	
             }
@@ -521,7 +518,9 @@ basic.forever(function () {
         }
     }
 })
+
 ```
+
 ## Step 25
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is •||`` to replace ``||logic:true||`` condition of 1st ``||logic:if true then||`` block.
 
