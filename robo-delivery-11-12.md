@@ -74,7 +74,7 @@ basic.forever(function () {
     })
     ```
 
-## Step 9 
+## Step 9
 Click ``||Variables:Variables||``. Click on |Make a Variable| to create a new ``||Variables:Variable||``.  
 Name it ``||Variables:IsDrivingEnabled||``.
 
@@ -89,6 +89,7 @@ basic.forever(function () {
             }
     })
 ```
+
 
 ## Step 10
 Click ``||Variables:Variables||`` drag and drop ``||Variables:IsDrivingEnabled||`` block
@@ -402,7 +403,7 @@ basic.forever(function () {
 ```
 
 ## Step 22
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside block within  ``||logic:if||`` ```||fwdSensors:sonar1 distance is under 0 m||``
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside block within  ``||logic:if||`` ``||fwdSensors:sonar1 distance is under 0 m||``
 ``||logic:else||``
 
 
@@ -458,7 +459,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
-
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -468,12 +468,10 @@ fwdMotors.rightServo,
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            music.ringTone(494)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+            music.ringTone(262)
+            basic.pause(500)
+            music.stopAllSounds()
         } else {
-            if (true) {
-            	
-            }
             if (true) {
             	
             }
