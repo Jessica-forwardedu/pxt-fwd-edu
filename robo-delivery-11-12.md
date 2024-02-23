@@ -878,7 +878,6 @@ basic.forever(function () {
     }
 })
 ```
-
 ## Step 33
 Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
 block under ``||fwdMotors:Drive Forward at 20||`` block.
@@ -886,7 +885,7 @@ block under ``||fwdMotors:Drive Forward at 20||`` block.
 ~hint What did this do?
   -  Using the pause block is telling our code to wait
   -  This means the code will wait before checking the conditions again
-hint~ 
+Hint~ 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -896,7 +895,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
-
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -906,25 +904,26 @@ fwdMotors.rightServo,
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            music.ringTone(494)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+            music.ringTone(262)
+            basic.pause(500)
+            music.stopAllSounds()
         } else {
             if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
                 fwdMotors.turn(5)
                 basic.pause(100)
             }
-            if (fwdSensors.line2.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
                 fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
                 basic.pause(100)
             }
-            if (fwdSensors.line3.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
                 fwdMotors.turn(-5)
             }
         }
     }
 })
-
 ```
+
 ## Step 34
 
 Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
