@@ -201,7 +201,6 @@ input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
 })
 input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
