@@ -515,10 +515,12 @@ basic.forever(function () {
             if (true) {
             	
             }
+            if (true) {
+            	
+            }
         }
     }
 })
-
 ```
 
 ## Step 25
@@ -538,7 +540,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
-
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -548,8 +549,9 @@ fwdMotors.rightServo,
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            music.ringTone(494)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 20)
+            music.ringTone(262)
+            basic.pause(500)
+            music.stopAllSounds()
         } else {
             if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
             	
@@ -563,7 +565,6 @@ basic.forever(function () {
         }
     }
 })
-
 ```
 ## Step 26
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line2 state is o||`` to replace ``||logic:true||`` condition of 2nd ``||logic:if true then||`` block. _Note: Use drop down menu to change line number._
