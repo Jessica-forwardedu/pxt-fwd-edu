@@ -372,7 +372,7 @@ basic.forever(function () {
 ```
 
 ## Step 21 
-Click ``||music:Music||`` drag and drop ``||Music:stopall||`` block under ``||Music:music.ringTone(262)||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
+Click ``||music:Music||`` drag and drop ``||Music:stopall||`` block under ``||basic:pause (ms) 100||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
