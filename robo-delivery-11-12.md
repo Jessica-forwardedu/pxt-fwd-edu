@@ -194,13 +194,15 @@ basic.forever(function () {
 ```
 
 ## Step 15
-Click ``||Logic:Logic||`` drag and drop ``||logic:false|`` to replace 0 in ``||Variables:IsDrivingEnabled = 0||`` within  ``||Input:on button A pressed||``
+Click ``||Logic:Logic||`` drag and drop ``||logic:true|`` to replace 0 in ``||Variables:IsDrivingEnabled = 0||`` within  ``||Input:on button B pressed||``
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
@@ -210,7 +212,11 @@ fwdMotors.rightServo,
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
-    	
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+        	
+        } else {
+        	
+        }
     }
 })
 ```
