@@ -283,7 +283,7 @@ basic.forever(function () {
 ```
 
 ## Step 18 
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is ●||`` to replace ``||logic:true||`` condition of ``||logic:true||`` within the ``||logic:if true then||`` block 
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:sonar1 distance is under 0 m||`` to replace ``||logic:true||`` condition of ``||logic:true||`` within the ``||logic:if true then||`` block 
 
 
 ```blocks 
@@ -294,7 +294,6 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     IsDrivingEnabled = true
 })
-
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -309,7 +308,8 @@ basic.forever(function () {
         	
         }
     }
-}) 
+})
+
 ```
 
 ## Step 19
