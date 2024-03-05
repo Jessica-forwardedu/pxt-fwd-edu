@@ -36,7 +36,7 @@ fwdMotors.leftServo,
 fwdMotors.leftServo,
 )
 ```
-```
+
 ## Step 7 
 Change the ``||fwdMotors:right motor to rightServo||``. 
 Keep the ``||fwdMotors: left motor to leftServo||``.
