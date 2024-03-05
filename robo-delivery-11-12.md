@@ -480,7 +480,7 @@ basic.forever(function () {
 })
 ```
 ## Step 24
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 2nd ``||logic:if true then||`` block. _Note: Three ``||logic:if true then||`` blocks are used.
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under the 2nd ``||logic:if true then||`` block. Note: Three ``||logic:if true then||`` blocks are used.
 
 ~hint Why did we do this?
   - Using the If/then block means we are giving the code a choice
