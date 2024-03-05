@@ -74,8 +74,8 @@ basic.forever(function () {
     })
     ```
 
-## Step 9
-Click ``||Variables:Variables||``. Click on |Make a Variable| to create a new ``||Variables:Variable||``.  
+# Step 9
+Click ``||Variables:Variables||``. Click on ``||Make a Variable||`` to create a new ``||Variables:Variable||``.  
 Name it ``||Variables:IsDrivingEnabled||``.
 
 
