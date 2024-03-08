@@ -26,9 +26,9 @@ Look below the @boardname@ simulator to see the Climate Action Board and the con
 ## Step 6
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Setup Driving||`` block inside ``||basic:on start||`` loop.
 
-~hint Why did we do this?
-  - Assigning specific roles to the left and right motors so it can drive forward and turn properly.
-  - We are teaching our robot which wheel is left and which wheel is right 
+~hint  What did that do? 
+- Assigning specific roles to the left and right motors so they can drive forward and turn properly.
+- We are teaching our robot which wheel is left and which wheel is right 
 hint~
 ```blocks
 fwdMotors.setupDriving(
