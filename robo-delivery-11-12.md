@@ -96,6 +96,10 @@ basic.forever(function () {
 Click ``||Variables:Variables||`` drag and drop ``||Variables:IsDrivingEnabled||`` block
 block to replace ``||logic:true||`` condition of ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
 
+~hint What did that do?
+- We are replacing part of the true condition of the If then with our variable
+- This way the conditional will check if you are driving or not 
+hint~ 
 
 ```blocks
 fwdMotors.setupDriving(
