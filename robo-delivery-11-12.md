@@ -116,6 +116,12 @@ basic.forever(function () {
 ## Step 11 
 Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||`` block
 on workspace. 
+
+~hint What did that do?
+- This button means an action will be trigger when we press the A button
+- The A button is on the Mirco:bit 
+hint~
+
 ```blocks 
 input.onButtonPressed(Button.A, function () {
 	
@@ -135,6 +141,11 @@ basic.forever(function () {
 ## Step 12 
 Right click ``||Input:on button A pressed||`` block and duplicate it.
 Change ``||Input:A||`` to ``||Input:B||``.
+
+~hint What did that do?
+- This button means an action will be trigger when we press the B button
+- The B button is on the Mirco:bit 
+hint~
 
 ```blocks 
 input.onButtonPressed(Button.A, function () {
