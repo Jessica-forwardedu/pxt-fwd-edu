@@ -390,6 +390,11 @@ basic.forever(function () {
 ## Step 20 
 Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||Music:music.ringTone||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
 
+~hint What did that do?
+- We are adding a pause button
+- That means the code will wait after the music
+hint~
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
