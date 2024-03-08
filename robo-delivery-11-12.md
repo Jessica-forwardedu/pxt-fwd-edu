@@ -460,12 +460,11 @@ basic.forever(function () {
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside block within  ``||logic:if||`` ``||fwdSensors:sonar1 distance is under 0 m||``
 ``||logic:else||``
 
-
-
-~hint What did that do?
-  - We have just created another conditional
-  - We are giving the code another condition to check for
-hint~
+~hint What did that do? 
+- We are creating another choice for the code to check for 
+- If something isn't too close another choice is made
+- Placing it into the forever block will make sure it never stops happening
+hint~ 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
