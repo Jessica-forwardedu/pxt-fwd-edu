@@ -322,6 +322,10 @@ basic.forever(function () {
 ## Step 18 
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:sonar1 distance is under 0 m||`` to replace ``||logic:true||`` condition of ``||logic:true||`` within the ``||logic:if true then||`` block 
 
+~hint What did that do? 
+- We are using the sonar sensor to check distance from other objects
+- We are having the computer check sonar distance and make a choice based on the information
+hint~
 
 ```blocks 
 input.onButtonPressed(Button.A, function () {
