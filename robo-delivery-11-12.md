@@ -424,6 +424,11 @@ basic.forever(function () {
 ## Step 21 
 Click ``||music:Music||`` drag and drop ``||Music:stopall||`` block under ``||basic:pause (ms) 100||`` block within  ``||logic:if||``  ``||fwdSensors:sonar1 distance is under 0 m||`` ``||logic:then||`` condition.
 
+~hint What did that do? 
+- We have told the music to stop
+- With this block, the sound will play pause and then stop
+hint~
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
