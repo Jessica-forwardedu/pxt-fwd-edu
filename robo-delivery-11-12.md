@@ -580,11 +580,11 @@ basic.forever(function () {
 ## Step 25
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is •||`` to replace ``||logic:true||`` condition of 1st ``||logic:if true then||`` block.
 
-~hint Why did we do this?
-  - We need to update the logic statment with real world information 
-  - Now we are telling our code to use the line sensor to move
-  - Placing it in forever means it will never stop checking
-hint~
+~hint What did that do? 
+- We need to update the logic statement with real-world information
+- Now we are telling our code to use the line sensor to move
+- Placing it in forever means it will never stop checking
+ hint~
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
