@@ -357,6 +357,10 @@ basic.forever(function () {
 Click ``||music:Music||`` drag and drop ``||Music:music.ringTone||`` block within  ``||logic:if||`` ``||fwdSensors:sonar1 distance is under 0 m||`` 
 ``||logic:then||`` condition.
 
+~hint What did that do?
+- We have added a sound inside the else condition.
+- If something is closer than 1 meter a sound will play
+hint~
 
 ```block
 input.onButtonPressed(Button.A, function () {
