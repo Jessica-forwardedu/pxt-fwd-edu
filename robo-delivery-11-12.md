@@ -56,13 +56,10 @@ fwdMotors.rightServo,
 ## Step 8
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
 
-
-~hint Why did we do this?
-  - Using the If/then block means we are giving the code a choice
-  - Placing it in forever means it will never stop happening
+~hint What did that do?
+- Using the If/then block means we are giving the code a choice
+- Placing it in forever means the code will never stop checking if the condition is met 
 hint~
-
-
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
