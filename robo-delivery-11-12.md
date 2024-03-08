@@ -167,6 +167,11 @@ basic.forever(function () {
 ## Step 13 
 Click ``||Variables:Variables||`` drag and drop ``||Variables:IsDrivingEnabled = 0||`` within  ``||Input:on button A pressed||``
 
+~hint What did that do? 
+- We are telling the code when to stop driving
+- We want to code to only stop driving when we press A 
+hint~
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = 0
@@ -190,6 +195,11 @@ basic.forever(function () {
 ## Step 14 
 Click ``||Logic:Logic||`` drag and drop ``||logic:false|`` to replace 0 in ``||Variables:IsDrivingEnabled = 0||`` within  ``||Input:on button A pressed||``
 
+~hint What did that do
+- We are telling the code when to stop driving
+- We want to code to only stop driving when we press A it's like saying no to driving
+hint~
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
@@ -212,6 +222,11 @@ basic.forever(function () {
 
 ## Step 15
 Click ``||Logic:Logic||`` drag and drop ``||logic:true|`` to replace 0 in ``||Variables:IsDrivingEnabled = 0||`` within  ``||Input:on button B pressed||``
+
+~hint What did that do
+- We are telling the code to check for driving 
+- This will happen when we press the B button 
+hint~
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
