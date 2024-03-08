@@ -71,10 +71,14 @@ basic.forever(function () {
     })
     ```
 
-# Step 9
+## Step 9
 Click ``||Variables:Variables||``. Click on ``||Make a Variable||`` to create a new ``||Variables:Variable||``.  
 Name it ``||Variables:IsDrivingEnabled||``.
 
+~hint What did that do? 
+- We are telling our computer to track information for us
+- This one is asking the computer to track if we are driving or not 
+hint~ 
 
 ```blocks
 fwdMotors.setupDriving(
