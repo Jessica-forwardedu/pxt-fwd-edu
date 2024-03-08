@@ -1036,7 +1036,8 @@ Change ``||basic:pause (ms) 100||`` to ``||basic:500||`` for all
 
 ~hint What did this do?
   -  We are not telling the code to wait for longer
-hint~ 
+  -  We are doing the same for all the pause blocks
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
