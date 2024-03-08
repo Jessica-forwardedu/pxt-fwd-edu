@@ -257,6 +257,11 @@ basic.forever(function () {
 
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Stop||`` under ``||Variables:IsDrivingEnabled = false||`` within  ``||Input:on button B pressed||``
 
+~hint What did that do?
+- We are telling the code when to start driving
+- We want to code to only start driving when we press B 
+hint~
+
 ```blocks 
 input.onButtonPressed(Button.A, function () {
     IsDrivingEnabled = false
@@ -282,10 +287,10 @@ basic.forever(function () {
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then else||`` block inside the first ``||logic:if true then||`` block inside ``||basic:forever||`` loop.
 
 
-~hint What did this do?
-  - We are now using the variable we just created
-  - Replacing the true condition means the conditional will check for driving instead
-hint~
+~hint What did that do?
+- We are adding another condition 
+- This gives the code a choice between two different actions 
+hint~ 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
