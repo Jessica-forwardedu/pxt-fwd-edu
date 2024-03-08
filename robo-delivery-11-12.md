@@ -716,7 +716,7 @@ Click ``||fwdMotors: Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||``
 ``||fwdSensors:line1 state is •||`` ``||logic:then||`` condition.
 
 ~hint Why did we do this?
-  -  We are now telling the code what to do when on the line
+  - We are now telling the code what to do when on the line
   - We are telling the code to turn in place to stay on the line
 hint~
 
@@ -759,7 +759,7 @@ basic.forever(function () {
 Change ``||fwdMotors:Turn 0||`` to ``||fwdMotors:5||``
 
 ~hint Why did we do this?
-  -  We are now telling the code how much to turn
+  - We are now telling the code how much to turn
   - Within the forever block the code will always check if the condition is met
 hint~
 
@@ -851,7 +851,9 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` 
 Change the ``||fwdMotors:Turn 0||`` to ``||fwdMotors:-5||``.
 
 ~hint Why did we do this?
-  -  We are now telling the code to turn again to stay on the line 
+  -  We are now telling the code to turn again to stay on the line
+  -  We will turn in the oppsite direction
+
 hint~
 
 ```blocks
