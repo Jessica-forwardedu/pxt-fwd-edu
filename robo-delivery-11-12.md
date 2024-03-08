@@ -41,7 +41,7 @@ fwdMotors.leftServo,
 Change the ``||fwdMotors:right motor to rightServo||``. 
 Keep the ``||fwdMotors: left motor to leftServo||``.
 
-~hint Why did we do this?
+~hint What did that do?
   - We can't have code going to the same servo 
   - This is why we are matching right and left
 hint~
