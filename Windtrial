@@ -155,6 +155,12 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ## Step 17
 Change speed of ``||fwdMotors:set middleServo 50 %||`` block inside ``||fwdSensors:on touch down||``
 to ``||0||``.
+
+~hint What did that do?
+- This action will be triggered when the dial is pressed down
+- When that happens the servo will stop moving
+hint~ 
+
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.middleServo.fwdSetSpeed(0)
