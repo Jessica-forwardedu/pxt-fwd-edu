@@ -50,6 +50,11 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 
 ## Step 9
 Right click ``||fwdSensors:on dial1 turned difference||`` block and duplicate. _Note: New block will be grey._
+
+~hint What did that do?
+- We are giving the computer instruction 
+- Anything placed inside will occur when the dial is turned
+hint~ 
 ![greyed out example](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-greyed-out-demo.png)
 
 ## Step 10
