@@ -135,6 +135,11 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 
 ## Step 16
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||`` block. Change ``||fwdMotors:leftServo||`` to ``||fwdMotors:middleServo||``.
+
+~hint What did that do?
+- We are adding the action to this event block
+- When we press down on the dial an action will be triggered
+hint~
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.middleServo.fwdSetSpeed(50)
