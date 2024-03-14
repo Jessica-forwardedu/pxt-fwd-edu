@@ -96,6 +96,12 @@ Click ``||fwdMotors:Motors||`` drag and drop
 ``||fwdMotors:set leftServo to 50 %||`` inside
 ``||fwdSensors:on dial1 turned difference||`` block.
 Change ``||fwdMotors:leftServo||`` to ``||fwdMotors:middleServo||``.
+
+~hint What did that do?
+- We are telling the code to set the speed of the servo
+- We want to send the code to the correct servo
+hint~  
+
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
