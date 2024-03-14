@@ -76,6 +76,12 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ## Step 11
 Click ``||fwdSensors:Sensors||`` drag and drop
 ``||fwdSensors:on touch down||`` block in workspace.
+
+~hint What did that do?
+- We are giving the computer a new kind of instruction
+- Now we want an action to happen when we press down on the dial
+hint~ 
+
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
