@@ -133,19 +133,6 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 ```
 
-## Step 14
-Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set middleServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set middleServo 50 %||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.middleServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.middleServo.fwdSetSpeed(50)
-})
-```
-
 ## Step 15
 Click ``||fwdSensors:Sensors||``.
 Drag ``||fwdSensors:dial1 absolute position||`` oval block close to
