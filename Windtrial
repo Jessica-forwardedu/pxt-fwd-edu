@@ -60,6 +60,12 @@ hint~
 ## Step 10
 Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned difference||`` block. _Note: Greyed out block will turn green._
 ![dial direction](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-direction-switch.gif)
+
+~hint What did that do?
+- We cannot have two different actions for the same direction
+- We have changed on to turn right and the other to turn left
+hint~ 
+
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     })
