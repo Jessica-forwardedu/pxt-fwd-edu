@@ -115,6 +115,13 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ## Step 13
 Right click ``||fwdMotors:set middleServo to 50 %||`` block and duplicate.
 Drag and drop inside the second ``||fwdSensors:on dial1 turned difference||`` block.
+
+~hint What did that do?
+- We are giving another instruction to the code
+- When we turn in the other direction we want the speed to be slower
+- Changing 50% to -50% will slow down the servo
+hint~ 
+
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
