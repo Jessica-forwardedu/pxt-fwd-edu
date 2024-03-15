@@ -39,6 +39,7 @@ Click ``||fwdSensors:Sensors||`` drag and drop
 ``||fwdSensors:on dial1 turned difference||`` block in workspace.
 
 ~hint What did that do?
+- This is a block known as an imput block
 - We are giving the computer instruction 
 - Anything placed inside will occur when the dial is turned
 hint~ 
