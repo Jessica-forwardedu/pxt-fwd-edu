@@ -174,9 +174,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 18 @showhint
-``|Download|`` and test your code. Click the bulb icon to see how
-the simulator shows the components working.
-![dial-middleServo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-middleServo.gif)
+``|Download|`` and test your code. 
 
 ## Step 19 @showdialog
 If after ``|Downloading|`` your project does not work please refer to the
