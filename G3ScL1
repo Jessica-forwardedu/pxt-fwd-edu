@@ -56,5 +56,16 @@ Look below the @boardname@ simulator to see the Climate Action kit Breakout Boar
 Try turning the Dial on your project, the virtual  simulator will react to it.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
-
+## Step 8 
+```template
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    basic.showIcon(IconNames.No)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    basic.showIcon(IconNames.SmallSquare)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    basic.showIcon(IconNames.Diamond)
+})
+```
 
