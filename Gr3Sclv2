@@ -6,23 +6,23 @@ Dial=github:climate-action-kits/pxt-fwd-edu
 ## Activity 1 Building your Protoype @showdialog 
 Welcome to the Level 2 Wind Turbine Project! 
 
-## Step 1 
+## Step 1 @showdialog 
 
-## Step 2 
+## Step 2 @showdialog 
 
-## Step 3 
+## Step 3 @showdialog 
 
-## Step 4 
+## Step 4 @showdialog 
 
-## Step 5 
+## Step 5 @showdialog 
 
-## Step 6 
+## Step 6 @showdialog 
 
-## Step 7 
+## Step 7 @showdialog 
 
-## Step 8 
+## Step 8 @showdialog 
 
-## Step 9 
+## Step 9 @showdialog 
 
 ## Actitity 2 Coding your Prototype @showdialog 
 Welcome to the coding section!
@@ -66,6 +66,13 @@ Look at our coding workspace below. We have three sets of code blocks. What do y
 - One is for pushing down on the dial
 hint~
 
+## Step 9 
+These ``||fwdSensors:on dial1 turned difference||`` blocks are called Inputs. They wait for a specific action, in our case, a Dial turned. Once triggered, the code that's inside will take place.
 
+## Step 10 
+Let's add an action inside of our input blocks. Click on the ``||fwdMotors:Motors||`` drawers and find the 'Servo (Continuous)' section. Drag a ``||fwdMotors:set leftServo to 50 %||`` block onto the workspace.
 
+```blocks 
+fwdMotors.leftServo.fwdSetSpeed(50) 
+``` 
 
