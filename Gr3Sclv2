@@ -75,4 +75,18 @@ Let's add an action inside of our input blocks. Click on the ``||fwdMotors:Motor
 ```blocks 
 fwdMotors.leftServo.fwdSetSpeed(50) 
 ``` 
+## Step 11 
+Place the ``||fwdMotors:set leftServo to 50 %||`` block inside of the first ``||fwdSensors:on dial1 turned difference||`` block. 
+
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+	
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+	
+})
+```
 
