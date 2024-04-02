@@ -30,8 +30,23 @@ Welcome to the coding section!
 ## Step 1 @showdialog 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
-## Step 2 
+## Step 2 @showdialog 
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
+
+## Step 3 
+Click the three dots beside [Download] button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
+
+## Step 4 
+Next, click the [Download] button to download the blank project to start-up the simulators. 
+
+## Step 5 
+This is how the simulators should look after a successful pairing and download. 
+
+## Step 6 
+Look below the virtual micro:bit on the left to see the virtual robotic components - these are our simulators! Try turning the Dial on your project in real-life. The virtual simulator Dial will react to it! 
+
+## Step 7 
+Try clicking the on/off button on the virtual simulator for the first Servo Motor (labelled Left). What happens? Can you use the slider to change the speed? 
 
 
 
