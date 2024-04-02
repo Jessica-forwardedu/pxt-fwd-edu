@@ -121,3 +121,41 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ```
+## Step 14 
+Drag another ``||fwdMotors:set leftServo to 50 %||`` block into the workspace and add it inside of the ``||fwdSensors:on touch down||`` input block. 
+
+~hint Why did we do that? 
+- This input block will be our trigger to stop the Motor
+hint~
+
+```blocks 
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+``` 
+## Step 15 
+Now, change the speed of that ``||fwdMotors:set leftServo to 50 %||`` block to be 0%. 
+
+~hint Why did we did that?  
+-  A speed of 0% will stop the motor 
+hint~ 
+
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+```
+
+
