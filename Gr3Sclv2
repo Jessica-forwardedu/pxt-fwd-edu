@@ -27,6 +27,14 @@ Welcome to the Level 2 Wind Turbine Project!
 ## Actitity 2 Coding your Prototype @showdialog 
 Welcome to the coding section!
 
+```template 
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+	})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+	})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+	})
+```
 ## Step 1 @showdialog 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
@@ -47,6 +55,11 @@ Look below the virtual micro:bit on the left to see the virtual robotic componen
 
 ## Step 7 
 Try clicking the on/off button on the virtual simulator for the first Servo Motor (labelled Left). What happens? Can you use the slider to change the speed? 
+
+## Time to start Coding 
+
+## Step 8 
+Look at our coding workspace below. We have three sets of code blocks. What do you notice is different about each of the [on dial1 turned difference] blocks?
 
 
 
