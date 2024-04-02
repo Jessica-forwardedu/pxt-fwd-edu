@@ -157,5 +157,14 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ```
+## Step 16 
+Click the [Download] button to download the code to your project. 
+
+## Step 17 @showdialog 
+Congratulations on finishing your coding prototype! Try testiny our project in real0life! This is what your finish prototype should look like! 
+
+# Step 18 
+In the next step, you can click the [Done] button to finish the tutorial. This will end the tutorial and keep your code! 
+
 
 
