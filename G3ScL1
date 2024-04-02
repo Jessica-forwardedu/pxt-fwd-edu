@@ -57,6 +57,8 @@ Try turning the Dial on your project, the virtual  simulator will react to it.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8 
+Look at our coding workshop below. We have three sets of code blocks here. What do you notice is different about each of the ||fwdSensors:on dial1 turned difference|| blocks?  
+
 ```template
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     basic.showIcon(IconNames.No)
@@ -68,4 +70,5 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     basic.showIcon(IconNames.Diamond)
 })
 ```
+
 
