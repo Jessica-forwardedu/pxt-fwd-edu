@@ -59,7 +59,7 @@ Try clicking the on/off button on the virtual simulator for the first Servo Moto
 ## Time to start Coding 
 
 ## Step 8 
-Look at our coding workspace below. We have three sets of code blocks. What do you notice is different about each of the [on dial1 turned difference] blocks?
+Look at our coding workspace below. We have three sets of code blocks. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?
 ~hint Click here 
 - One block is for clockwise direction
 - One block is for counterclockwise 
@@ -89,4 +89,35 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 	
 })
 ```
+## Step 12 
+Repeat the previous step to add a ``||fwdMotors:set leftServo to 50 %||`` block inside of the other ``||fwdSensors:on dial1 turned difference||`` block. 
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+	
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+```
+## Step 13 
+Change the speed of last ``||fwdMotors:set leftServo to 50 %||`` to to be - 50% 
 
+~hint Why did we do that? 
+- Making the speed a negative value will cause the Motor to go backwards 
+- This way, we have one Motor block that goes clockwise, and one that goes counterclockwise
+hint~
+
+```blocks 
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+	
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+```
