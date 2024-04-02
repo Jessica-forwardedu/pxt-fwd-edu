@@ -59,6 +59,12 @@ Try turning the Dial on your project, the virtual  simulator will react to it.
 ## Step 8 
 Look at our coding workshop below. We have three sets of code blocks here. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?  
 
+~hint
+- One block is for clockwise direction
+- One block is for counterclockwise 
+- One is for pushing down on the dial
+hint~
+
 ```template
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     basic.showIcon(IconNames.No)
