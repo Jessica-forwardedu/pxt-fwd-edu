@@ -76,9 +76,21 @@ basic.forever(function () {
 ## Step 1 
 Take a look at our starter code in the workspace below. We have two ``||fwdSensors:set all ledRing LEDs to||`` with a pause in between. 
 
+```blocks
+basic.forever(function () {
+    if (true) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
+
 ## Step 2 
 These two LED code blocks are rapped inside of another block called ``||logic:if true then||``.  
 
 ## Step 3 
-To start, go to the ``||fwdSensors:Sensors||`` drawer, and find the 'Touch' section. Drag the [touch pressed] block onto the workspace.
+To start, go to the ``||fwdSensors:Sensors||`` drawer, and find the 'Touch' section. Drag the ``||fwdSensors:on touch down||`` block onto the workspace.
+
 
