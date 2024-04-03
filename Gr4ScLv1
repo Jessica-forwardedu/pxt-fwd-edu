@@ -11,21 +11,29 @@ Welcome to the Monitoring Bees and pollination with a bug counter.
 ## Step 1 
 For this project, we will use the Touch Sensor to detect when a 'bee' has landed on our prototype.  The LED light will turn on when a 'bee' visits the prototype.
 
-## Step 2
+## Step 2 @showdialog 
 SBS 1 
 
-## Step 3 
+## Step 3 @showdialog 
 SBS 2 
 
-## Step 4 
+## Step 4 @showdialog 
 SBS 3 
 
-## Step 5 
+## Step 5 @showdialog 
 SBS 4
 
-## Step 6 
+## Step 6 @showdialog 
 SBS 5 
 
-## Step 7
+## Step 7 @showdialog 
 SBS 6 
+
+## Step 8 @showdialog 
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+
+## Activity 2 Building your Prototype @showdialog 
+
+Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
+## Step 1 
 
