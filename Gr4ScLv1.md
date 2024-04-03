@@ -90,7 +90,27 @@ basic.forever(function () {
 ## Step 2 
 These two LED code blocks are rapped inside of another block called ``||logic:if true then||``.  
 
+```blocks
+basic.forever(function () {
+    if (true) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
 ## Step 3 
-To start, go to the ``||fwdSensors:Sensors||`` drawer, and find the 'Touch' section. Drag the ``||fwdSensors:on touch down||`` block onto the workspace.
+Click ``||fwdSensors:Sensors||`` find the Touch next section. Drag ``||fwdSensors:on touch down||`` and use it to replace to true condiction in the ``||logic:if true then||`` statment. 
+
+```blocks
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
 
 
