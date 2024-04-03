@@ -132,6 +132,12 @@ basic.forever(function () {
     }
 })
 ``` 
+## Step 5 
+Click the Download button to download the code to your project.
+
+## Step 6 @showdialog 
+Try testing your project in real-life! This is what it should look like.  
+
 
 
 
