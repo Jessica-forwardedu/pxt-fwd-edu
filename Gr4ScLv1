@@ -63,6 +63,16 @@ Try clicking the lights on the virtual simulator for the LED Light. What happens
 ## Activity 3 
 Now that we have set up for coding, let's begin to code our project . 
 
+```blocks 
+basic.forever(function () {
+    if (true) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
 ## Step 1 
 Take a look at our starter code in the workspace below. We have two [set all ledRing LEDs to] with a pause in between. 
 
@@ -71,3 +81,4 @@ These two LED code blocks are rapped inside of another block called ``||logic:if
 
 ## Step 3 
 To start, go to the ``||fwdSensors:Sensors||`` drawer, and find the 'Touch' section. Drag the [touch pressed] block onto the workspace.
+
