@@ -98,7 +98,7 @@ Try testing your project in real-life! This is what it should look like.
 ## Step 12 @showdialog 
 Congratulations on finishing your coding project! 
 
-##Step 13 @showdialog 
+## Step 13 @showdialog 
 In the next step, you can click the [Done] button to finish the tutorial. 
 
 
