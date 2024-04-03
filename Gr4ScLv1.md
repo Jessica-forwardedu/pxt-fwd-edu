@@ -102,6 +102,10 @@ basic.forever(function () {
 ## Step 3 
 Click ``||fwdSensors:Sensors||`` find the Touch next section. Drag ``||fwdSensors:on touch down||`` and use it to replace to true condiction in the ``||logic:if true then||`` statment. 
 
+~ hint Why did we do this?
+- Now our conditional statement is looking for the condition of the Touch Sensor being pressed
+  hint~
+  
 ```blocks
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
