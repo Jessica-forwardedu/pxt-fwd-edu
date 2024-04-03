@@ -32,7 +32,7 @@ SBS 6
 ## Step 8 @showdialog 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
-## Activity 2 Building your Prototype @showdialog 
+## Activity 2 Setting up Coding @showdialog 
 
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
 
@@ -44,3 +44,9 @@ Next, click the [Download] button to download the blank project to start-up the 
 
 ## Step 3 
 This is how the simulators should look after a successful pairing and download. 
+
+## Step 4 
+Look below the virtual micro:bit on the left to see the virtual robotic components - these are our simulators! Try touching the Touch Sensor on your project in real-life. The virtual simulator Touch Sensor will react to it! 
+
+## Step 5 
+Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
