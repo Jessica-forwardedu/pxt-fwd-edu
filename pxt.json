@@ -67,7 +67,10 @@
         "lesson-final-code/wind-3-code.md",
         "lesson-final-code/robo-delivery-11-12-code.md",
         "icon.png", 
-        "Gr4ScLv1.md" 
+        "Gr4ScLv1.md", 
+        "Gr3-wind-lvl2.md" ,
+        "gr3-wind-lvl1.md"
+        
     ],
     "testFiles": [
         "test.ts"
