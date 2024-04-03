@@ -66,7 +66,8 @@
         "lesson-final-code/wind-2-ext.md",
         "lesson-final-code/wind-3-code.md",
         "lesson-final-code/robo-delivery-11-12-code.md",
-        "icon.png"
+        "icon.png", 
+        "Gr4ScLv1.md" 
     ],
     "testFiles": [
         "test.ts"
