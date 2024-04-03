@@ -65,3 +65,6 @@ Now that we have set up for coding, let's begin to code our prototype.
 
 ## Step 1 
 Take a look at our starter code in the workspace below. We have two [set all ledRing LEDs to] with a pause in between. 
+
+## Step 2 
+These two LED code blocks are rapped inside of another block called ``||logic:if true then||``.  
