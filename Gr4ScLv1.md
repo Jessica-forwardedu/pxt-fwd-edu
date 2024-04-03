@@ -115,6 +115,24 @@ basic.forever(function () {
     }
 })
 ```
+## Step 4
+Now, let's change the LED Light colour. Go to the first ``||fwdSensors:set all ledRing LEDs to||`` block and click on the colour bubble. Choose any colour you would like. Make sure you leave the last  black. 
+
+~hint 
+- This is how we customize our LED Light colour 
+- We left the last LED Light code block as black because we want the LED Light to turn off after the Touch Sensor is pressed
+hint~
+
+```blocks
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+``` 
+
 
 
 
