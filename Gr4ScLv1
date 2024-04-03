@@ -32,8 +32,17 @@ SBS 6
 ## Step 8 @showdialog 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
-## Activity 2 Setting up Coding @showdialog 
 
+```package 
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+## Activity 2 Setting up Coding @showdialog 
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
 
 ## Step 1 
@@ -50,3 +59,9 @@ Look below the virtual micro:bit on the left to see the virtual robotic componen
 
 ## Step 5 
 Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
+
+## Activity 3 
+Now that we have set up for coding, let's begin to code our prototype. 
+
+## Step 1 
+Take a look at our starter code in the workspace below. We have two [set all ledRing LEDs to] with a pause in between. 
