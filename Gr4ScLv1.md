@@ -139,6 +139,10 @@ Click the Download button to download the code to your project.
 Try testing your project in real-life! This is what it should look like.  
 
 
+## Step 7 @showdialog 
+Congratulations on finishing your coding project! 
+In the next step, you can click the [Done] button to finish the tutorial.
+
 
 
 
