@@ -9,7 +9,7 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 Welcome to the Monitoring Bees and pollination with a bug counter. 
 
 ## Step 1 
-For this project, we will use the Touch Sensor to detect when a 'bee' has landed on our prototype.  The LED light will turn on when a 'bee' visits the prototype.
+For this project, we will use the Touch Sensor to detect when a 'bee' has landed on our project .  The LED light will turn on when a 'bee' visits the project .
 
 ## Step 2 @showdialog 
 SBS 1 
@@ -61,7 +61,7 @@ Look below the virtual micro:bit on the left to see the virtual robotic componen
 Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
 
 ## Activity 3 
-Now that we have set up for coding, let's begin to code our prototype. 
+Now that we have set up for coding, let's begin to code our project . 
 
 ## Step 1 
 Take a look at our starter code in the workspace below. We have two [set all ledRing LEDs to] with a pause in between. 
@@ -70,4 +70,4 @@ Take a look at our starter code in the workspace below. We have two [set all led
 These two LED code blocks are rapped inside of another block called ``||logic:if true then||``.  
 
 ## Step 3 
-To start, go to the [Sensors] drawer, and find the 'Touch' section. Drag the [touch pressed] block onto the workspace.
+To start, go to the ``||fwdSensors:Sensors||`` drawer, and find the 'Touch' section. Drag the [touch pressed] block onto the workspace.
