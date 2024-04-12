@@ -34,6 +34,25 @@ Coding Set up
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
+## Step 2 @showhint
+Click three dots besides ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+
+
+## Step 3 
+Next, click the [Download] button to download the blank project to start-up the simulators. 
+
+## Step 4 
+This is how the simulators should look after a successful pairing and download. 
+
+## Step 5 
+Look below the virtual micro:bit on the left to see the virtual robotic components - these are our simulators! Try touching the Touch Sensor on your project in real-life. The virtual simulator Touch Sensor will react to it! 
+
+## Step 6 
+Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
+
+
 ```package 
 basic.forever(function () {
     if (true) {
@@ -44,26 +63,8 @@ basic.forever(function () {
 })
 ```
 
-## Activity 2 Setting up Coding @showdialog 
+## Activity 3 Start Coding @showdialog 
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
-
-## Step 1 
-Click the three dots beside [Download] button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
-
-## Step 2 
-Next, click the [Download] button to download the blank project to start-up the simulators. 
-
-## Step 3 
-This is how the simulators should look after a successful pairing and download. 
-
-## Step 4 
-Look below the virtual micro:bit on the left to see the virtual robotic components - these are our simulators! Try touching the Touch Sensor on your project in real-life. The virtual simulator Touch Sensor will react to it! 
-
-## Step 5 
-Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
-
-## Activity 3 
-Now that we have set up for coding, let's begin to code our project. 
 
 ```blocks 
 basic.forever(function () {
