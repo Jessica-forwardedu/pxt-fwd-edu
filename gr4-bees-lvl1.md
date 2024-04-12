@@ -29,9 +29,12 @@ SBS 5
 ## Step 7 @showdialog 
 SBS 6 
 
-## Step 8 @showdialog 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+## Activity 2 @showdialog
+Coding Set up
 
+## Step 1 @showdialog 
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ```package 
 basic.forever(function () {
