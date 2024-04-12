@@ -25,7 +25,7 @@ For this project, we will use the Touch Sensor to detect when a 'bee' has landed
 ![beeslvl1sbs5](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs5.png)
 
 ## Step 7 @showdialog 
-SBS 6 
+![beeslvl1sbs6](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs6.png) 
 
 ## Activity 2 @showdialog
 Coding Set up
