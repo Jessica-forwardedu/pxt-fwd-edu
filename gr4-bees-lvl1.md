@@ -16,13 +16,13 @@ For this project, we will use the Touch Sensor to detect when a 'bee' has landed
 ![beelvl1sbs2](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs2.png) 
 
 ## Step 4 @showdialog 
-![beeslvl1sbs2](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs3.png)
+![beeslvl1sbs3](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs3.png)
 
 ## Step 5 @showdialog 
-![beeslvl1sbs](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs4.png)
+![beeslvl1sbs4](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs4.png)
 
 ## Step 6 @showdialog 
-SBS 5 
+![beeslvl1sbs5](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs5.png)
 
 ## Step 7 @showdialog 
 SBS 6 
