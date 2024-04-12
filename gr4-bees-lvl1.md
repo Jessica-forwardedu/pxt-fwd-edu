@@ -12,10 +12,10 @@ Welcome to the Monitoring Bees and pollination with a bug counter.
 For this project, we will use the Touch Sensor to detect when a 'bee' has landed on our project.  The LED light will turn on when a 'bee' visits the project.
 
 ## Step 2 @showdialog 
-![beelvl1sls](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs1.png)
+![beelvl1sbs1](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs1.png)
 
 ## Step 3 @showdialog 
-SBS 2 
+![beelvl1sbs2](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs2.png) 
 
 ## Step 4 @showdialog 
 SBS 3 
