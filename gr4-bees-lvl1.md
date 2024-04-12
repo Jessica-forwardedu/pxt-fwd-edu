@@ -7,8 +7,6 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 
 ## Activity 1 Building your Project @showdialog 
 Welcome to the Monitoring Bees and pollination with a bug counter. 
-
-## Step 1 @showdialog 
 For this project, we will use the Touch Sensor to detect when a 'bee' has landed on our project.  The LED light will turn on when a 'bee' visits the project.
 
 ## Step 2 @showdialog 
@@ -21,7 +19,7 @@ For this project, we will use the Touch Sensor to detect when a 'bee' has landed
 ![beeslvl1sbs2](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs3.png)
 
 ## Step 5 @showdialog 
-SBS 4
+![beeslvl1sbs](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs4.png)
 
 ## Step 6 @showdialog 
 SBS 5 
