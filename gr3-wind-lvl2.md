@@ -44,8 +44,11 @@ Code our project to make it interactive
 ## Build Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Activity 2: Coding your Prototype @showdialog 
-Welcome to the coding section!
+## Activity 2: Coding set up @showdialog  
+Step 1
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+
+![plugin](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp) 
 
 ```template 
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -55,14 +58,13 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
 	})
 ```
-## Step 1 @showdialog 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-
-## Step 2 @showdialog 
-Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
+## Step 2 @showhint
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
 
 ## Step 3 
-Click the three dots beside [Download] button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
+Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
+
 
 ## Step 4 
 Next, click the [Download] button to download the blank project to start-up the simulators. 
