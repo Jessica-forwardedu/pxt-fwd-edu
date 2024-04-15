@@ -38,7 +38,7 @@ Click three dots besides ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Step 3 @showdialog 
+## Step 3 
 Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
 
 ## Step 4 @showdialog 
@@ -78,7 +78,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Step 2 
-What do you notice about each one of the ``|show icon|`` blocks in our code?
+What do you notice about each one of the ``||show icon||`` blocks in our code?
 
 ~hint What does this mean?
 - Each block will display a different icon on the mirco:bit LED
@@ -86,7 +86,7 @@ What do you notice about each one of the ``|show icon|`` blocks in our code?
 hint~
 
 ## Step 3 
-Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click the dropdown arrow, and choose any pattern. Click the drop down arrow and choose any pattern. 
+Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click the dropdown arrow, and choose any pattern. 
 
 ~hint What does this mean?
 - Make sure you choose a different for each one. 
