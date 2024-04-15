@@ -95,7 +95,7 @@ Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click
 hint~ 
 
 ## Step 4 
-Click the ```[Download]`` button to download the code for your project. 
+Click the ``[Download]`` button to download the code for your project. 
 
 ## Step 5 
 Try testing your project in real life! This is what it should look like. 
