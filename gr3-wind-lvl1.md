@@ -61,7 +61,7 @@ Coding your Project
 ## Step 1 
 Look at our coding workspace below. We have three sets of code blocks here. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?  
 
-~hint What did that do?
+~hint What does this mean?
 - One block is for clockwise direction
 - One block is for counterclockwise 
 - One is for pushing down on the dial
@@ -82,23 +82,23 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ## Step 2 
 What do you notice about each one of the ``[show icon]`` blocks in our code?
 
-~hint What did that do?
-- Each block will display a different incon on the mirco:bit LED
+~hint What does this mean?
+- Each block will display a different icon on the mirco:bit LED
 - One icon for each direction
 hint~
 
 ## Step 3 
 Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click the dropdown arrow, and choose any pattern. Click the drop down arrow and choose any pattern. 
 
-~hint What did that do?
+~hint What does this mean?
 - Make sure you choose a different for each one. 
 hint~ 
 
 ## Step 4 
-Click the [Download] button to download the code to your project. 
+Click the ```[Download]`` button to download the code for your project. 
 
 ## Step 5 
-Try testing your project in real-life! This is what it should look like. 
+Try testing your project in real life! This is what it should look like. 
 
 ## Step 6 @showdialog 
 Congratulations on finishing your coding project! 
