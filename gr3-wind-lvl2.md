@@ -3,44 +3,48 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
-## Activity 1 Building your Protoype @showdialog 
-Welcome to the Level 2 Wind Turbine Project! 
+## Activity 1: Building your Protoype @showdialog 
+Welcome to the Level 2 Wind Turbine Project! In this project, you will use the dial to control the servo motor! 
+In this tutorial, we will…
+Build our project with the Climate Action Kit
+Connect our project to the computer
+Code our project to make it interactive
 
-## Step 1 @showdialog 
+## Build Step 1 @showdialog 
 
 ![wind](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
 
-## Step 2 @showdialog 
+## Build Step 2 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
 
-## Step 3 @showdialog 
+## BuildStep 3 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
 
-## Step 4 @showdialog 
+## Build Step 4 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png) 
 
-## Step 5 @showdialog 
+## Build Step 5 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png) 
 
-## Step 6 @showdialog 
+## Build Step 6 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
 
-## Step 7 @showdialog 
+## Build Step 7 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
 
-## Step 8 @showdialog 
+## Build Step 8 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
 
-## Step 9 @showdialog 
+## Build Step 9 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
 
-## Step 10 @showdialog 
+## Build Step 10 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
 
-##Step 11 @showdialog 
+## Build Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Activity 2 Coding your Prototype @showdialog 
+## Activity 2: Coding your Prototype @showdialog 
 Welcome to the coding section!
 
 ```template 
