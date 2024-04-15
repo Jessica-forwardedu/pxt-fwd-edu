@@ -98,7 +98,7 @@ hint~
 Click the ``[Download]`` button to download the code for your project. 
 
 ## Step 5 
-Try testing your project in real life! This is what it should look like. 
+Try testing your project in real life! This is what it should look like. What happens to the number when you turn left? Right?
 
 ## Step 6 @showdialog 
 Congratulations on finishing your coding project! 
