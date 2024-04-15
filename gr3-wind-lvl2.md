@@ -69,9 +69,10 @@ Next, click the ``|Download|`` button to download the blank project to start-up 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
-
-## Step 5 
-This is how the simulators should look after a successful pairing and download. 
+## Step 5 @showhint
+Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Try turning the Dial on your project, the virtual  simulator will react to it.
+![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 6 
 Look below the virtual micro:bit on the left to see the virtual robotic components - these are our simulators! Try turning the Dial on your project in real-life. The virtual simulator Dial will react to it! 
