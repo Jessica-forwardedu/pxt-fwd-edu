@@ -12,20 +12,20 @@ Welcome to Powering the Future with Wind Energy Level 1
 ## Welcome @showdialog
 For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
 
-## Step 1 @showdialog 
+## Build Step 1 @showdialog 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs1.png)
   
 
-## Step 2 @showdialog 
+## Build Step 2 @showdialog 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs2.png) 
 
-## Step 3 @showdialog
+## Build Step 3 @showdialog
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs3.png) 
 
-## Step 4 @showdialog
+## Build Step 4 @showdialog
 ![Step byStep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs4.png)
 
-## Step 5 @showdialog
+## Build Step 5 @showdialog
 ![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)  
 
 ## Activity 2 Coding Set up @showdialog
