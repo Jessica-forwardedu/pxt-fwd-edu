@@ -29,9 +29,7 @@ For this project, we will use the Dial to trigger different symbols to show on t
 ![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)  
 
 ## Activity 2 Coding Set up @showdialog
-Coding Set up
-
-## Step 1 @showdialog
+## Step 1 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
@@ -41,7 +39,7 @@ Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Step 3 @showdialog 
-Next, click the ``[Download]``button to download the blank project to start-up the simulators. 
+Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
 
 ## Step 4 @showdialog 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
@@ -80,7 +78,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Step 2 
-What do you notice about each one of the ``[show icon]`` blocks in our code?
+What do you notice about each one of the ``|show icon|`` blocks in our code?
 
 ~hint What does this mean?
 - Each block will display a different icon on the mirco:bit LED
@@ -95,14 +93,14 @@ Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click
 hint~ 
 
 ## Step 4 
-Click the ``[Download]`` button to download the code for your project. 
+Click the ``|Download|`` button to download the code for your project. 
 
 ## Step 5 
 Try testing your project in real life! This is what it should look like. What happens to the number when you turn left? Right?
 
 ## Step 6 @showdialog 
 Congratulations on finishing your coding project! 
-In the next step, you can click the ``[Done]`` button to finish the tutorial. 
+In the next step, you can click the ``|Done|`` button to finish the tutorial. 
 
 
 
