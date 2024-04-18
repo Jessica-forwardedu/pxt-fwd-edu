@@ -1,4 +1,4 @@
-# Powering the Future with Wind Energy
+# The Powerful Force of Wind 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
@@ -27,7 +27,7 @@ Welcome to Powering the Future with Wind Energy Level 1. For this project, we wi
 ![Step by Step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)  
 
 ## Activity 2:Coding Set up @showdialog
-## Step 1 
+## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
@@ -52,3 +52,19 @@ Try turning the Dial on your project, the virtual  simulator will react to it.
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
 
 ## Activity 3: Coding Your Project 
+
+## Step 1 
+Think back to the wind turbine picture. What part of our physical project represents:
+The force of the wind? 
+The Spinning blades 
+
+~hint Answers
+- the force of the wind? (answer: the dial)
+- the spinning blades? (answer: motor and green component)
+hint~
+
+```template
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+```
