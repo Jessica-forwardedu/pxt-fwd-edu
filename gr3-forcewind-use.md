@@ -71,11 +71,23 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ## Coding Step 2 
 Take a look at the two code blocks below. What do you think they do? Take a guess! 
 
-## Coding Step 3 
+## Coding Step 3 @showdialog
 Let's test it out! Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit and download your code! 
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
+## Coding Step 4 @showdialog 
+What happens when you try the following?
+- turn the dial to the right?
+- turn the dial to the left?
+- 
+~hint
+- Turning the dial to the right makes the blades spin! This is because we're telling the computer what to do.
+- Turning the dial to the left doesn't do anything because there's no code to tell the computer what to do in that case.
+  hint~
+
+## Coding Step 5 
+Were your guesses right? Did anything surprise you? 
 
 
 
