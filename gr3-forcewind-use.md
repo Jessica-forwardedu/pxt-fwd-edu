@@ -53,7 +53,7 @@ Start coding! Follow the steps at the top of the screen for your instructions. C
 
 ## Activity 3: Coding Your Project 
 
-## Step 1 
+## Coding Step 1 @showdialog 
 Think back to the wind turbine picture. What part of our physical project represents:
 The force of the wind? 
 The Spinning blades 
@@ -68,3 +68,14 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
 ```
+## Coding Step 2 
+Take a look at the two code blocks below. What do you think they do? Take a guess! 
+
+## Coding Step 3 
+Let's test it out! Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit and download your code! 
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+
+
+
+
