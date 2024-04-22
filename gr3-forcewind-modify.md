@@ -80,6 +80,12 @@ The code below will make our wind turbine turn. Let's learn some more.  What hap
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
 
 ## Tinker Step 2
+What happens when you make the number in the blue block smaller? Try it!
+
+~hint Tell me more!
+- When we make the number smaller, the turbine spins more slowly.
+hint~ 
+
 
 
 
