@@ -86,6 +86,13 @@ What happens when you make the number in the blue block smaller? Try it!
 - When we make the number smaller, the turbine spins more slowly.
 hint~ 
 
+## Tinker Step 3 
+What happens when you make the number in the blue block negative? Try it!
+
+~hint Tell me more! 
+- When you add a '-' sign to the number, the turbine spins in the opposite direction.
+  hint~
+  
 
 
 
