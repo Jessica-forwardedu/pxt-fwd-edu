@@ -63,3 +63,9 @@ Click three dots besides ``|Download|`` button, and click on _Connect Device_. N
 
 ## Coding Step 3 
 Next, click the``|Download|`` button to download code to your project.
+
+## Activity 3: Tinker @showdialog 
+We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
+After each change, you will need to flash your updated code to your project.
+
+
