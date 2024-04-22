@@ -52,16 +52,16 @@ We are going to do this in 3 parts:
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
 
 ## Activity 2:Coding Set up @showdialog
-## Step 1 @showdialog
+## Coding Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
-## Step 2 @showhint
+## Coding Set up Step 2 @showhint
 Click three dots besides ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Step 3 
+## Coding Set up Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Activity 3: Coding Your Project 
@@ -72,11 +72,6 @@ Think back to the wind turbine picture. What part of our physical project repres
 The force of the wind? 
 The Spinning blades 
 
-~hint Answers
-- the force of the wind? (answer: the dial)
-- the spinning blades? (answer: motor and green component)
-hint~
-
 ```template
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
@@ -86,18 +81,13 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 Take a look at the two code blocks below. What do you think they do? Take a guess! 
 
 ## Coding Step 3 @showdialog
-Let's test it out! Click three dots beside ``|Download|`` button, and click on _Connect Device_.
-Next, follow the steps to pair your micro:bit and download your code! 
-![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+Let's test it out! We are going to interact with our project and see what happens.
 
 ## Coding Step 4 @showdialog 
-What happens when you try the following?
-- turn the dial to the right?
-- turn the dial to the left?
-- 
-~hint
-- Turning the dial to the right makes the blades spin! This is because we're telling the computer what to do.
-- Turning the dial to the left doesn't do anything because there's no code to tell the computer what to do in that case.
+What do you think will happen when you turn the dial to the right? Try it now!
+~hint Tell me more!
+- When we turn the dial to the right, the green building block should also turn to the right!
+-  This what is called the input and output of the code.
   hint~
 
 ## Coding Step 5 
