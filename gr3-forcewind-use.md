@@ -5,7 +5,11 @@ Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
 
 ## Activity 1: Building Your Project @showdialog
-Welcome to Powering the Future with Wind Energy Level 1. For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
+Let's build a moving wind turbine!
+We are going to do this in 3 parts:
+1. Build our wind turbine
+2. Add code to make it move
+3. Play with our wind turbine to learn how it works
 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
