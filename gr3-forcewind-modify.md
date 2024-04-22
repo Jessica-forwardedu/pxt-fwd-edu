@@ -52,13 +52,18 @@ We are going to do this in 34 parts:
 ## Activity 2: Coding @showdialog
 We need to connect our project to the computer to make it come to life with code!
 The code will be the instructions that tell our micro:bit what to do.
+```template
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+```
 
 ## Coding Step 1 @showdialog
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Coding Step 2 
-Click three dots besides ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+Click three dots beside ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Coding Step 3 
@@ -67,5 +72,15 @@ Next, click the``|Download|`` button to download code to your project.
 ## Activity 3: Tinker @showdialog 
 We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 After each change, you will need to flash your updated code to your project.
+
+## Tinker Step 1
+The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in the blue block bigger? Try it!
+
+~hint Tell me more?
+- The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
+
+## Tinker Step 2
+
+
 
 
