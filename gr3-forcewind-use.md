@@ -85,6 +85,7 @@ Let's test it out! We are going to interact with our project and see what happen
 
 ## Coding Step 4 @showdialog 
 What do you think will happen when you turn the dial to the right? Try it now!
+
 ~hint Tell me more!
 - When we turn the dial to the right, the green building block should also turn to the right!
 -  This what is called the input and output of the code.
