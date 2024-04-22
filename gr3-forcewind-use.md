@@ -62,10 +62,10 @@ Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Step 3 
-Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
-
+Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Activity 3: Coding Your Project 
+We are ready to play with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 
 ## Coding Step 1 @showdialog 
 Think back to the wind turbine picture. What part of our physical project represents:
