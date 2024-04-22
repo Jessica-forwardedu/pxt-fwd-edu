@@ -5,7 +5,12 @@ Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
 
 ## Activity 1: Building Your Project @showdialog
-Welcome to Powering the Future with Wind Energy Level 1. For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
+Let's build a wind turbine!
+We are going to do this in 34 parts:
+1. Build our wind turbine
+2. Add starter code to make it move
+3. Tinker with our code to learn how it works
+4. Complete a small coding challenge
 
 ![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
@@ -44,14 +49,16 @@ Welcome to Powering the Future with Wind Energy Level 1. For this project, we wi
 ## Build Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Activity 2:Coding Set up @showdialog
+## Activity 2: Coding @showdialog
+We need to connect our project to the computer to make it come to life with code!
+The code will be the instructions that tell our micro:bit what to do.
+
 ## Step 1 @showdialog
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Step 2 @showhint
-Click three dots besides ``|Download|`` button, and click on _Connect Device_.
-Next, follow the steps to pair your micro:bit.
+Click three dots besides ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Step 3 
