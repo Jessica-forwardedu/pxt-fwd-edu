@@ -53,25 +53,13 @@ We are going to do this in 34 parts:
 We need to connect our project to the computer to make it come to life with code!
 The code will be the instructions that tell our micro:bit what to do.
 
-## Step 1 @showdialog
+## Coding Step 1 @showdialog
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
-## Step 2 @showhint
+## Coding Step 2 
 Click three dots besides ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Step 3 
-Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
-
-## Step 4 @showdialog 
-This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors alongside the Pump.
-![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
-
-## Step 5 @showhint
-Look below the @boardname@ simulator to see the Climate Action kit Breakout Board and the connected sensors.
-Try turning the Dial on your project, the virtual  simulator will react to it.
-![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
-
-## Step 6 @showhint
-Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
+## Coding Step 3 
+Next, click the``|Download|`` button to download code to your project.
