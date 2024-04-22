@@ -101,6 +101,16 @@ What happens when you change the direction of the arrow in the green block? Try 
 - When we change the direction arrow, we will now have to turn the dial in the opposite direction to trigger our code/output.
   hint~
 
+## Tinker Step 5 Challenge time!
+Can you add another event to your code to make the wind turbine turn in both directions?"
 
+## Congratulations! @showdialog 
 
+You've completed the activity! If your teacher has asked you to save your project, now is the time!
+
+## Reflection @showdialog 
+Think about something about this project that challenged you. How did you overcome the challenge? How did that make you feel?
+
+## Finished! @showdialog 
+In the next step, you can click the `|done|` button to finish the tutorial.
 
