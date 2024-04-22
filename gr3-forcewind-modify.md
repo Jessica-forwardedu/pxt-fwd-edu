@@ -92,7 +92,14 @@ What happens when you make the number in the blue block negative? Try it!
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
   hint~
-  
+
+## Tinker Step 4 
+What happens when you change the direction of the arrow in the green block? Try it!
+
+~hint Tell me more! 
+- The green block represents the input of the code. This shows us how we need to interact with our project in order to make something happen. 
+- When we change the direction arrow, we will now have to turn the dial in the opposite direction to trigger our code/output.
+  hint~
 
 
 
