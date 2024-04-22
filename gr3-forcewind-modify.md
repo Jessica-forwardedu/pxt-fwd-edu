@@ -6,7 +6,7 @@ Dial=github:climate-action-kits/pxt-fwd-edu
 
 ## Activity 1: Building Your Project @showdialog
 Let's build a wind turbine!
-We are going to do this in 34 parts:
+We are going to do this in 4 parts:
 1. Build our wind turbine
 2. Add starter code to make it move
 3. Tinker with our code to learn how it works
