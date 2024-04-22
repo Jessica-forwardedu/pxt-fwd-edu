@@ -91,7 +91,9 @@ What do you think will happen when you turn the dial to the right? Try it now!
   hint~
 
 ## Coding Step 5 
-Were your guesses right? Did anything surprise you? 
+What do you think will happen when you turn the dial to the left? Try it now!
 
+~hint Tell me more! 
+-  Nothing happens! There is no code that tells the computer what to do when the dial is turned to the left.
 
 
