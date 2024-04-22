@@ -95,5 +95,18 @@ What do you think will happen when you turn the dial to the left? Try it now!
 
 ~hint Tell me more! 
 -  Nothing happens! There is no code that tells the computer what to do when the dial is turned to the left.
+  hint~
 
+## Coding Step 6 
+If you have time, try making other changes to your project. What happens if you connect the dial or motor to different parts of the breakout board? 
+Remember, make one change at a time so you can learn what is happening.
+
+## Congratulations! @showdialog 
+You've completed the activity! Did anything surprise you about this project? 
+
+## Reflection @ Showdialog 
+List 2 new things you learned today. What is one thing you want to learn more about? 
+
+## Finished! @showdialog 
+In the next step, you can click the ``|Done|``button to finish the tutorial.
 
