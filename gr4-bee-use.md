@@ -33,7 +33,7 @@ We are going to do this in three parts:
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs7.png?raw=true)
 
 ## Build Step 8 
-![beessbs]
+![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs8.png?raw=true)
 
 ## Build Step 9
 ![beessbs]
