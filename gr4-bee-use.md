@@ -57,13 +57,18 @@ We are going to do this in three parts:
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs15.png?raw=true)
 
 ## Activity 2: Code your Project 
-
-## Code Step 1 @showdialog 
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
 
-## Code Step 2 @showdialog 
+## Code Step 1 @showdialog 
 Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
 ![pluginwp](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pluganim.webp)
+
+## Code Step 2 @showdialog
+
+Click the three dots beside ``|Download|`` button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
+![pairing](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pairmicrobitGIF.webp) 
+
+
 
 
