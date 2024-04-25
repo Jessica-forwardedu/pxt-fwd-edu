@@ -21,7 +21,7 @@ We are going to do this in three parts:
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs3.png?raw=true) 
 
 ## Build Step 4
-![beessbs]
+![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs4.png?raw=true) 
 
 ## Build Step 5
 ![beessbs]
