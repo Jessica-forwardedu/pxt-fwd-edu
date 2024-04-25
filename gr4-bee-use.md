@@ -56,3 +56,9 @@ We are going to do this in three parts:
 ## Build Step 15 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs15.png?raw=true)
 
+## Activity 2: Code your Project 
+
+## Code Step 1 @showdialog 
+We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
+
+
