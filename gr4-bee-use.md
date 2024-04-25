@@ -12,7 +12,7 @@ We are going to do this in three parts:
 3. Play with the Bee Counter to learn how it works
 
 ## Build Step 1
-![beessbs]
+![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bee-sbs1.png?raw=true) 
 
 ## Build Step 2
 ![beessbs]
