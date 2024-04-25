@@ -14,17 +14,45 @@ We are going to do this in three parts:
 ## Build Step 1
 ![beessbs]
 
+## Build Step 2
 ![beessbs]
+
+## Build Step 3  
 ![beessbs]
+
+## Build Step 4
 ![beessbs]
+
+## Build Step 5
 ![beessbs]
+
+## Build Step 6
 ![beessbs]
+
+## Build Step 7
 ![beessbs]
+
+## Build Step 8 
 ![beessbs]
+
+## Build Step 9
 ![beessbs]
+
+## Build Step 10
 ![beessbs]
+
+## Build Step 11
 ![beessbs]
+
+## Build Step 12 
 ![beessbs]
+
+## Build Step 13
 ![beessbs]
+
+## Build Step 14
+![beessbs]
+
+## Build Step 15 
 ![beessbs]
 
