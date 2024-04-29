@@ -76,4 +76,42 @@ Next ``|Download|`` button to download the code to your Project and to see the s
 
 We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click 'Tell me more!' 
 
+```template
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+```
 
+## Use Step 1 
+
+Take a look at your completed Bee Counter and think about these questions.
+
+What are all of its parts?
+
+
+~hint Tell me more!
+- This project has building blocks that make up the structure
+- It also has a touch sensor, a micro:bit, LEDs, a breakout board, and connectors.
+hint~
+
+## Use Step 2 
+Looking at your completed project what should the project do?
+
+
+~hint Tell me more!
+- A Bee Counter should be able to count each time a Bee visits a flower and tell us the number! This was as Protectors of Bees we know if they like our flower or not!
+- If the number is low how can we help more bees visit? 
+hint~
+
+## Use Step 3 
+How do you think each part works together to make that happen?
+
+~hint
+- The building blocks are for the structure! The blocks are holding up the touch sensor, the LED, the breakout board and the micro:bit.
+- The micro:bit is like the brain of this project, the sensors are the organs, and the building blocks are the bones of our project.
+- hint~
