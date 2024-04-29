@@ -156,3 +156,12 @@ basic.forever(function () {
     }
 })
 ```
+
+## Congratulations! @showdialog 
+You've completed the activity! Did anything surprise you about this project? 
+
+## Reflection @ Showdialog 
+List 2 new things you learned today. What is one thing you want to learn more about? 
+
+## Finished! @showdialog 
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
