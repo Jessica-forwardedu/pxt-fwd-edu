@@ -11,52 +11,52 @@ We are going to do this in three parts:
 2. Add code to make it work
 3. Play with the Bee Counter to learn how it works
 
-## Build Step 1
+## Build Step 1 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bee-sbs1.png?raw=true) 
 
-## Build Step 2
+## Build Step 2 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs2.png?raw=true)
 
-## Build Step 3  
+## Build Step 3  @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs3.png?raw=true) 
 
-## Build Step 4
+## Build Step 4 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs4.png?raw=true) 
 
-## Build Step 5
+## Build Step 5 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs5.png?raw=true) 
 
-## Build Step 6
+## Build Step 6 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs6.png?raw=true)
 
-## Build Step 7
+## Build Step 7 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs7.png?raw=true)
 
-## Build Step 8 
+## Build Step 8 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs8.png?raw=true)
 
-## Build Step 9
+## Build Step 9 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs9.png?raw=true)
 
-## Build Step 10
+## Build Step 10 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs10.png?raw=true)
 
-## Build Step 11
+## Build Step 11 @showdialog  
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs11.png?raw=true) 
 
-## Build Step 12 
+## Build Step 12  @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs12.png?raw=true)
 
-## Build Step 13
+## Build Step 13 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs13.png?raw=true) 
 
-## Build Step 14
+## Build Step 14 @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs14.png?raw=true) 
 
-## Build Step 15 
+## Build Step 15  @showdialog 
 ![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs15.png?raw=true)
 
-## Activity 2: Code your Project 
+## Activity 2: Code your Project @showdialog  
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
 
 ## Code Step 1 @showdialog 
@@ -111,10 +111,10 @@ hint~
 ## Use Step 3 
 How do you think each part works together to make that happen?
 
-~hint
+~hint Tell me more!
 - The building blocks are for the structure! The blocks are holding up the touch sensor, the LED, the breakout board and the micro:bit.
 - The micro:bit is like the brain of this project, the sensors are the organs, and the building blocks are the bones of our project.
-  hint~
+hint~
 
 ## Use Step 4 
 
@@ -123,4 +123,36 @@ Try reading the code blocks below. What do you think will happen when you touch 
 ~hint Tell me more! 
 - Each time you touch the touch sensor, the number on the micro:bit goes up by 1.
 - We made this happen with a conditional statement in our code.
-  hint~ 
+  hint~
+
+## Use Step 5
+We use conditional statements to help us make decisions all the time in real life/ For example, "If it is raining, then I will open my umbrella."
+Can you identify the conditional statement?
+
+~hint Tell me more!
+  - The conditional statement in this code is: ||variables:set bugVisits to 0||
+  hint~
+
+```blocks
+let bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+    }
+})
+```
+
+## Use Step 6
+
+Click the ``|download|`` button to redownload the code to your project. What happens to the number of the LEDs?
+
+```blocks
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+```
