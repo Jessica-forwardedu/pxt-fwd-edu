@@ -69,6 +69,9 @@ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit
 Click the three dots beside ``|Download|`` button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
 ![pairing](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pairmicrobitGIF.webp) 
 
+## Code Step 3 
+Next ``|Download|`` button to download the code to your Project and to see the smart component simulators. 
+
 
 
 
