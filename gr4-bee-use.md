@@ -114,4 +114,13 @@ How do you think each part works together to make that happen?
 ~hint
 - The building blocks are for the structure! The blocks are holding up the touch sensor, the LED, the breakout board and the micro:bit.
 - The micro:bit is like the brain of this project, the sensors are the organs, and the building blocks are the bones of our project.
-- hint~
+  hint~
+
+## Use Step 4 
+
+Try reading the code blocks below. What do you think will happen when you touch the sensors? Try touching it a few times in a row.
+
+~hint Tell me more! 
+- Each time you touch the touch sensor, the number on the micro:bit goes up by 1.
+- We made this happen with a conditional statement in our code.
+  hint~ 
