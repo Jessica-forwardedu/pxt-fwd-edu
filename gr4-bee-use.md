@@ -72,6 +72,8 @@ Click the three dots beside ``|Download|`` button, and click on Connect Device. 
 ## Code Step 3 
 Next ``|Download|`` button to download the code to your Project and to see the smart component simulators. 
 
+## Activity 3: Use your Project @showdialog 
 
+We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click 'Tell me more!' 
 
 
