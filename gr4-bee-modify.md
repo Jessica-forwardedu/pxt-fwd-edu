@@ -115,6 +115,21 @@ Try changing the number inside the ``||variables:set bugVisits to 0||`` block to
 - The number we see on the Mirco:bit changes too.
  hint~
 
+## Modify Step 4 
+Let's press the touch sensor a couple of times. What do you see? 
+~hint 
+- Our touch is like a bee landing on the sensor. Each time you press the touch sensor, the number shown on the micro:bit goes up by 1. \This means our variable is changing by 1.
+- We use a conditional statements in our code to make this work. 
+
+```block
+let bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+```
 
 
 
