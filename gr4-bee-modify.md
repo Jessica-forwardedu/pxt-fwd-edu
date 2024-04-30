@@ -19,6 +19,7 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
+
 ```
 
 ## Build Step 1 @showdialog
@@ -53,5 +54,9 @@ basic.forever(function () {
 
 ## Build Step 11 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs11.png)
+
+## Build Step 12 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs12.png)
+
 
 
