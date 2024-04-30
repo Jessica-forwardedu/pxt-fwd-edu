@@ -10,17 +10,7 @@ Welcome to the Bee Counter Project!  We are going to do this in 4 steps
 3. Modify your project 
 4. Complete a small coding challenge
 
-```template
-let bugVisits = 0
-basic.showNumber(bugVisits)
-basic.forever(function () {
-    if (fwdSensors.touch.fwdIsPressed()) {
-        bugVisits += 1
-        basic.showNumber(bugVisits)
-    }
-})
 
-```
 
 ## Build Step 1 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
@@ -66,5 +56,45 @@ basic.forever(function () {
 
 ## Build Step 15 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs15.png)
+
+## Activity 2: Code your Project @showdialog
+We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro:bit what to do.
+
+```template
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+
+```
+## Code Step 1 @showdialog
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+![breakout board](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
+
+## Code Step 2 @showdialog
+Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+
+## Code Step 3 
+Next, click the ``|Download|`` button to download code to your project.
+
+## Activity 3: Modify your Project @showdialog 
+We are ready to modify our bee counter! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
+
+After each change, you will need to download your updated code to your project.
+
+## Modify Step 1 
+In this project, we are tracking the number of bees that visit our flower - like a scientist!
+We are going to use something called a ``||Variables:Variables||`` to track this number. In this program, our variable is named 'bugVisits'.
+
+~hint 
+- In coding, we can store information using Variables
+- think of a variable like your piggy bank. Money can go in and out, but you have to open it up to see the amount inside!
+  hint~
+
 
 
