@@ -91,10 +91,21 @@ After each change, you will need to download your updated code to your project.
 In this project, we are tracking the number of bees that visit our flower - like a scientist!
 We are going to use something called a ``||Variables:Variables||`` to track this number. In this program, our variable is named 'bugVisits'.
 
-~hint 
+~hint Tell me More!
 - In coding, we can store information using Variables
 - think of a variable like your piggy bank. Money can go in and out, but you have to open it up to see the amount inside!
   hint~
 
+## Modify Step 2 
+Let's look at variables in action.
+What number do you see on the micro:bit right now? What do you think this number means?
+
+~hint Tell me More!
+    - The number we see on the micro:bit  is '0'. It is the number of bees that have visited our flower so far. We set this number to '0' by putting the ||variables:set bugVisits to 0|| block inside the ``||basic:on start||`` event.
+hint~
+
+```blocks
+let bugVisits = 0
+```
 
 
