@@ -108,4 +108,13 @@ hint~
 let bugVisits = 0
 ```
 
+## Modify Step 3 
+Try changing the number inside the ``||variables:set bugVisits to 0||`` block to something between 1 and 5. What happens? 
+
+~hint Tell me More! 
+- The number we see on the Mirco:bit changes too.
+ hint~
+
+
+
 
