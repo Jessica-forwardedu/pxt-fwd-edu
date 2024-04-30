@@ -24,3 +24,5 @@ basic.forever(function () {
 ## Build Step 1 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
 
+## Build Step 2 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs2.png)
