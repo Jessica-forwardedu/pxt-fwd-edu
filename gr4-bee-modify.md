@@ -62,6 +62,7 @@ We need to connect our project to the computer to make it come to life with code
 
 ```template
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -69,7 +70,6 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
-
 
 ```
 ## Code Step 1 @showdialog
@@ -115,6 +115,7 @@ hint~
 
 ```blocks
 let bugVisits = 0
+bugVisits = 0 
 ```
 
 ## Modify Step 3 
@@ -139,6 +140,7 @@ hint~
 
 ```block
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -174,6 +176,7 @@ What happens when you increase the number in ``||Variables:change bugVisits by 1
 
 ```blocks
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -183,8 +186,7 @@ basic.forever(function () {
 })
 
 ```
-
-# Activity 4: Challenge @showdialog 
+## Activity 4: Challenge @showdialog 
 Let's try and use the LED lights! Can you make the LED lights turn on each time a bee lands? 
 
 ## Challenge Step 1 
@@ -197,6 +199,7 @@ hint~
 
 ```blocks
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -210,12 +213,13 @@ basic.forever(function () {
 
 Now, think about when you want these lights to turn on. After a bee lands, right? <br>Where should we put this block to make that happen?<br> Can you make the light turn green?<br> Use the lightbulb icon to check your work! 
 
-~hint 
+~hint Tell me More!
 - Remember, the order in which we place our blocks is very important, just like the steps in a dance routine!
 hint~
 
 ```blocks
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -227,7 +231,7 @@ basic.forever(function () {
 ```
 ## Challenge Step 3 
 
-Got it in place? Awesome! This block should go right after we count a bee visit, under the ||variables:set beeVisits to 0|| block. Remember, our code runs in the order we place the blocks.
+Got it in place? Awesome! This block should go right after we count a bee visit, under the ``||variables:set beeVisits to 0||`` block. Remember, our code runs in the order we place the blocks.
 
 ~hint Tell me More!
 - Don't forget to test your changed code by downloading the new code!
@@ -236,6 +240,7 @@ Got it in place? Awesome! This block should go right after we count a bee visit,
 
   ```blocks
   let bugVisits = 0
+  bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -257,6 +262,7 @@ hint~
 
   ```blocks
   let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -273,6 +279,7 @@ Did you place it correctly? The ``||fwdSensors:set all ledRing LEDs to||`` block
 ```blocks
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
