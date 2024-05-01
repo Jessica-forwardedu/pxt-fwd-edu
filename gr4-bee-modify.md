@@ -108,7 +108,8 @@ What do you think this number means?
 ~hint Tell me More!
     - The number we see on the micro:bit  is '0'. 
     - It is the number of bees that have visited our flower so far. 
-    - We set this number to '0' by putting the ||variables:set bugVisits to 0|| block inside the ``||basic:on start||`` event.
+    - We set this number to '0' by putting the set bugVisits to 0
+      block inside the ``||basic:on start||`` event.
 hint~
 
 ```blocks
@@ -145,6 +146,21 @@ basic.forever(function () {
     }
 })
 ```
+
+## Modify Step 5 
+Conditional statements tell our micro:bit what to do when some condition is met. We use conditional statements in our own lives. For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
+
+```blocks
+let bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
+
 
 
 
