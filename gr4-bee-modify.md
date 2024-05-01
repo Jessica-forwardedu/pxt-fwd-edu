@@ -140,7 +140,6 @@ hint~
 
 ```block
 let bugVisits = 0
-bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
