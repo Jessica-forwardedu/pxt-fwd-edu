@@ -206,5 +206,25 @@ basic.forever(function () {
 })
 ```
 
+## Challenge Step 2 
+
+Now, think about when you want these lights to turn on. After a bee lands, right? <br>Where should we put this block to make that happen?<br> Can you make the light turn green?<br> Use the lightbulb icon to check your work! 
+
+~hint 
+- Remember, the order in which we place our blocks is very important, just like the steps in a dance routine!
+hint~
+
+```blocks
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
 
 
