@@ -110,7 +110,7 @@ What do you think this number means?
     - The number we see on the micro:bit  is '0'. 
     - It is the number of bees that have visited our flower so far. 
     - We set this number to '0' by putting the set bugVisits to 0
-      block inside the ``||basic:on start||`` event.
+      block inside the On Start event.
 hint~
 
 ```blocks
@@ -118,8 +118,7 @@ let bugVisits = 0
 ```
 
 ## Modify Step 3 
-Try changing the number inside the ``||variables:set bugVisits to 1||`` block to something between 1 and 5.<br> 
-What happens? 
+Try changing the number inside the ``||variables:set bugVisits to 1||`` block to something between 1 and 5. What happens? 
 
 ~hint Tell me More! 
 - The number we see on the Mirco:bit changes too.
@@ -147,10 +146,11 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
+
 ```
 
 ## Modify Step 5 
-Conditional statements tell our micro:bit what to do when some condition is met. <br> We use conditional statements in our own lives. For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
+Conditional statements tell our micro:bit what to do when some condition is met. <br> We use conditional statements in our own lives. <br> For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
 
 ```blocks
 let bugVisits = 0
@@ -181,14 +181,30 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
+
 ```
 
 # Activity 4: Challenge @showdialog 
 Let's try and use the LED lights! Can you make the LED lights turn on each time a bee lands? 
 
+## Challenge Step 1 
+First, we need to control the LED lights. Go to ``||fwdSensors:Sensors||`` and drag  and drop ``||fwdSensors:set all ledRing LEDs to||`` block into the workspace.
 
+~hint Tell me More 
+- Just like a painter picks the right brush for a stroke, we need the right block to control our LED lights.
+- This block is like the switch that turns on your room's light—it tells all the LEDs what to do at once!
+hint~
 
-
+```blocks
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 3
+        basic.showNumber(bugVisits)
+    }
+})
+```
 
 
 
