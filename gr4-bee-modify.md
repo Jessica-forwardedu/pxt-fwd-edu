@@ -138,12 +138,13 @@ What do you see?
 - We use a **conditional statements** in our code to make this work. 
 hint~
 
-```block
+```blocks
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
-        bugVisits += 1
+        bugVisits += 3
         basic.showNumber(bugVisits)
     }
 })
