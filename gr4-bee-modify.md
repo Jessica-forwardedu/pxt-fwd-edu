@@ -267,3 +267,29 @@ basic.forever(function () {
 })
 ```
 
+## Challenge Step 5 
+Did you place it correctly? The ``||fwdSensors:set all ledRing LEDs to||`` block should be placed within the ``||basic:on start||`` block, above the ``||variables:set beeVisits to 0||``. <br> Use the lightbulb icon to check your code!
+
+```blocks
+fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
+## Congratulations @showdialog 
+You've completed the activity! Your project should be working like this!
+
+## Reflection @showdialog 
+Think about something about this project that challenged you.
+How did you overcome the challenge? How did that make you feel? 
+
+## Finished! @showdialog 
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
+
