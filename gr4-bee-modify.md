@@ -84,10 +84,10 @@ Click three dots beside the ``|Download|`` button, and click on _Connect Device_
 Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Modify your Project @showdialog 
-We are ready to modify our bee counter!
+We are ready to modify our Bee Counter!
 
-Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
-After each change, you will need to download your updated code to your project.
+Follow the instructions at the top of the screen. When you are ready for more information, click **'Tell me more!'**
+After each change, you will need to ``|Download|`` your updated code to your project.
 
 ## Modify Step 1 
 In this project, we are tracking the number of bees that visit our flower - like a scientist!
@@ -119,10 +119,11 @@ bugVisits = 0
 ```
 
 ## Modify Step 3 
-Try changing the number inside the ``||variables:set bugVisits to 1||`` block to something between 1 and 5. What happens? 
+Try changing the number inside the ``||variables:set bugVisits to 0||`` block to something between 1 and 5. What happens? 
 
 ~hint Tell me More! 
 - The number we see on the Mirco:bit changes too.
+- Don't see the change? Remember to download the new code. 
  hint~
 
 ## Modify Step 4 
@@ -152,7 +153,7 @@ basic.forever(function () {
 ```
 
 ## Modify Step 5 
-Conditional statements tell our micro:bit what to do when some condition is met. <br> We use conditional statements in our own lives. <br> For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
+**Conditional statements** tell our micro:bit what to do when some condition is met. <br> We use conditional statements in our own lives. For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
 
 ```blocks
 let bugVisits = 0
@@ -186,6 +187,32 @@ basic.forever(function () {
 })
 
 ```
+
+## Modify Step 6 
+
+Now that you've got the hang of how variables work, let's adjust the number in ||Variables:change bugVisits by 3|| back to 1!
+
+~hint Tell me More!
+- We're counting each bee visit as just one. Simple, right?
+- Keeping the number at 3 would mix up our count! It's like counting every single bee as 3.
+-  Let’s keep things accurate by changing it back to 1.
+hint~
+
+```blocks
+let bugVisits = 0
+bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 3
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
+
+
+
 ## Activity 4: Challenge @showdialog 
 Let's try and use the LED lights! Can you make the LED lights turn on each time a bee lands? 
 
@@ -194,7 +221,7 @@ First, we need to control the LED lights. Go to ``||fwdSensors:Sensors||`` and d
 
 ~hint Tell me More 
 - Just like a painter picks the right brush for a stroke, we need the right block to control our LED lights.
-- This block is like the switch that turns on your room's light—it tells all the LEDs what to do at once!
+- This block is like the switch it tells all the LEDs what to do at once
 hint~
 
 ```blocks
@@ -231,7 +258,7 @@ basic.forever(function () {
 ```
 ## Challenge Step 3 
 
-Got it in place? Awesome! This block should go right after we count a bee visit, under the ``||variables:set beeVisits to 0||`` block. Remember, our code runs in the order we place the blocks.
+Got it in place? Awesome! This block should go right after we count a bee visit, under the ``||variables:change beeVisits to 1||`` block. Remember, our code runs in the order we place the blocks.
 
 ~hint Tell me More!
 - Don't forget to test your changed code by downloading the new code!
@@ -294,8 +321,8 @@ basic.forever(function () {
 You've completed the activity! Your project should be working like this!
 
 ## Reflection @showdialog 
-Think about something about this project that challenged you.
-How did you overcome the challenge? How did that make you feel? 
+Think about something about this project that challenged you. <br>
+How did you overcome the challenge?<br> How did that make you feel? 
 
 ## Finished! @showdialog 
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
