@@ -191,7 +191,7 @@ basic.forever(function () {
 
 ## Modify Step 6 
 
-Now that you've got the hang of how variables work, let's adjust the number in ||Variables:change bugVisits by 3|| back to 1!
+Now that you've got the hang of how variables work, let's adjust the number in ``||Variables:change bugVisits by 3||`` back to 1 and ``||Variables:set bugVisits by 3||`` to 0 again.
 
 ~hint Tell me More!
 - We're counting each bee visit as just one. Simple, right?
@@ -231,7 +231,7 @@ bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
-        bugVisits += 3
+        bugVisits += 0
         basic.showNumber(bugVisits)
     }
 })
