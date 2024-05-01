@@ -246,3 +246,24 @@ basic.forever(function () {
 })
 ```
 
+## Challenge Step 4
+
+We’ve got green for go—when bees visit. How about red for when our garden is calm, with no bees around? Let’s grab another ``||fwdSensors:set all ledRing LEDs to||`` block from ``||fwdSensors:Sensors||``. Think about the best spot to place this block.
+
+~hint Tell me More!
+- If we want the lights to be a different colour BEFORE a bug visist it needs to be the first thing our code does
+- Don't forget to download your changed code onto the mirco:bit
+hint~
+
+  ```blocks
+  let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
