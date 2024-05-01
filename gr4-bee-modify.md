@@ -70,6 +70,7 @@ basic.forever(function () {
     }
 })
 
+
 ```
 ## Code Step 1 @showdialog
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
@@ -117,7 +118,7 @@ let bugVisits = 0
 ```
 
 ## Modify Step 3 
-Try changing the number inside the ``||variables:set bugVisits to 0||`` block to something between 1 and 5.<br> 
+Try changing the number inside the ``||variables:set bugVisits to 1||`` block to something between 1 and 5.<br> 
 What happens? 
 
 ~hint Tell me More! 
@@ -139,6 +140,7 @@ hint~
 
 ```block
 let bugVisits = 0
+basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
@@ -148,7 +150,7 @@ basic.forever(function () {
 ```
 
 ## Modify Step 5 
-Conditional statements tell our micro:bit what to do when some condition is met. We use conditional statements in our own lives. For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
+Conditional statements tell our micro:bit what to do when some condition is met. <br> We use conditional statements in our own lives. For example, "If the bell rings at recess, then I line up to go inside!" <br> Can you find the conditional statement in our code?
 
 ```blocks
 let bugVisits = 0
@@ -160,6 +162,29 @@ basic.forever(function () {
 })
 ```
 
+## Modify Step 6 
+
+What happens when you increase the number in ``||Variables:change bugVisits by 1||``?  <br> Try changing it to '3' now, ``|download|`` the new code.  Then press the touch sensor.
+
+~hint Tell me More 
+- Now each time you press the touch sensor, the number on the micro:bit goes up by 3.
+- This block changes the number in out variable.
+- Remember the piggy bank? It's like when we add money to it!
+  hint~
+
+```blocks
+let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 3
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
+# Activity 4: Challenge @showdialog 
+Let's try and use the LED lights! Can you make the LED lights turn on each time a bee lands? 
 
 
 
