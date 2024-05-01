@@ -225,6 +225,24 @@ basic.forever(function () {
     }
 })
 ```
+## Challenge Step 3 
 
+Got it in place? Awesome! This block should go right after we count a bee visit, under the ||variables:set beeVisits to 0|| block. Remember, our code runs in the order we place the blocks.
 
+~hint Tell me More!
+- Don't forget to test your changed code by downloading the new code!
+- Check your work against the light blub. 
+  hint~
+
+  ```blocks
+  let bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+        basic.showNumber(bugVisits)
+    }
+})
+```
 
