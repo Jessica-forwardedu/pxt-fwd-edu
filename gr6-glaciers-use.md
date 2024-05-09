@@ -34,13 +34,13 @@ Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in
 ## Build Step 8 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs8.webp)
 
-## Build Step 8 @showdialog 
+## Build Step 9 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs9.webp)
 
-## Build Step 8 @showdialog 
+## Build Step 10 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs10.webp)
 
-## Build Step 8 @showdialog 
+## Build Step 11 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs11.webp)
 
 
