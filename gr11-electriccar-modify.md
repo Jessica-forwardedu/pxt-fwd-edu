@@ -202,7 +202,7 @@ Did you test your electric vehicle? Was your guess right? By lowering the thresh
 hint~
 
 ## Modify Step 6 
-Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
+Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  0.2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
 What do you predict will happen with each change?
 
 ~hint Tell me More 
