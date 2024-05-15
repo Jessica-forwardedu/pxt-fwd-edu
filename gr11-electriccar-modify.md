@@ -216,7 +216,7 @@ You might have noticed that with a shorter sonar distance, your electric vehicle
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
-Start by having the electric vehicle pause before making its next move. Click on ``||Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
+Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
