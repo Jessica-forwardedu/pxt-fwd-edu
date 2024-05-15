@@ -244,7 +244,7 @@ basic.forever(function () {
 ## Challenge Step 2 
 Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
-Click on ``||basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
+Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
