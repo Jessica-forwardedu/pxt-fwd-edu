@@ -346,4 +346,90 @@ loops.everyInterval(120000, function () {
 })
 ```
 
+## Challenge Step 4
+Once the plant has been successfully watered, we want to change all LEDs on the LED ring to green. <br> What block should you use for this and where should it be placed within the code? 
+
+
+~hint Tell me more!
+- To set *all* LEDs on the LED ring to green *after* the plant has been watered, add the ``||fwdSensors:set all ledRing LEDs to green||`` block at the very bottom of our code.
+hint~
+
+
+```blocks
+let pumpStop = 0
+let pumpStart = 0
+loops.everyInterval(120000, function () {
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    pumpStart = input.runningTime()
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdRotate(1)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+    // @highlight
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+})
+```
+
+
+## Challenge Step 5
+You might notice now that the LEDs stay green on the second round of the main loop. We can adjust this by adding a ``||fwdSensors:set all ledRing LEDs to black||`` block.
+
+
+~hint Tell me more!
+- This resets the LEDs to black for each iteration of the main loop.
+hint~
+
+
+```blocks
+let pumpStop = 0
+let pumpStart = 0
+loops.everyInterval(120000, function () {
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    // @highlight
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    pumpStart = input.runningTime()
+    // @collapsed
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdRotate(1)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+})
+```
+
+
+## Explore
+Are there any parts of the code you still don’t understand? This is your time to explore! 
+
+
+~hint Tell me more!
+Follow these steps: 
+1. Find a part of the code you’d like to learn more about
+2. Make a single change to this block
+3. Download the new code
+4. Test it out and observe what changed
+5. Repeat!
+hint~
+
+
+## Congratulations! @showdialog
+You've completed the activity!
+
+
+## Reflection @showdialog
+Think about something in this project that challenged you.<br> How did you overcome the challenge? How did that make you feel?
+
+
+## Reflection @showdialog
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
+
+
 
