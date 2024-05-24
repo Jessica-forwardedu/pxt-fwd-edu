@@ -187,7 +187,89 @@ input.onButtonPressed(Button.B, function () {
     basic.pause(2000)
     basic.clearScreen()
 })
-
-
 ```
+
+## Modify Step 4
+What do you think will happen if you liftthe bottom part of your moisture sensor back out of the water and hold it there? Try it now.
+
+
+Was this what you expected?
+
+
+~hint Tell me more!
+- You might have noticed that nothing happened! That’s because the ``||loops:while||`` loop is within the ``||input:on A pressed||`` block.
+- This means the sensor only checks the moisture once when is A pressed.
+hint~
+
+
+```blocks
+let pumpStart = 0
+let pumpStop = 0
+// @highlight
+input.onButtonPressed(Button.A, function () {
+    pumpStart = input.runningTime()
+    // @highlight
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+})
+```
+
+
+## Modify Step 5
+We want our smart farming system to _automatically_ check the moisture levels _regularly_. Try moving this segment of code into a ``||basic:forever||`` loop from the ``||basic:Basic||`` category. Download the new code. <br>
+Now move the bottom of the moisture sensor in and out of the water. What has changed? What happens when you press B?
+
+
+~hint Tell me more!
+- The sensor is now measuring moisture levels *constantly*. The pump should start *any time* the moisture is below 50%.
+- Using a ``||basic:forever||`` loop breaks the pump timer, though. If you press B, you’ll only ever see ‘0’ on the LEDs. Why do you think this is happening?
+- Can you think of another loop we could use instead of ``||basic:forever||`` that might not break the timer?
+hint~
+
+
+```blocks
+let pumpStop = 0
+let pumpStart = 0
+// @highlight
+basic.forever(function () {
+    pumpStart = input.runningTime()
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+})
+```
+
+
+## Modify Step 6
+Let's try moving the code into an ``||loops: every 500 ms||`` loop. Let's say we want to check the moisture every 2 minutes. How many milliseconds is that?
+
+Try out your new code!
+
+~hint Tell me more!
+- Change '500 ms' to '120000 ms' to run the loop every 2 minutes.
+hint~
+
+
+```blocks
+let pumpStop = 0
+let pumpStart = 0
+// @highlight
+loops.everyInterval(120000, function () {
+    pumpStart = input.runningTime()
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+})
+```
+
 
