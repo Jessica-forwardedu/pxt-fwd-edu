@@ -271,5 +271,79 @@ loops.everyInterval(120000, function () {
     pumpStop = input.runningTime()
 })
 ```
+## Challenge Time! @showdialog
+Waiting for 2 minutes to see if the watering system starts again might be a bit stressful. We can’t really tell if the code is still working unless we stand around and watch. That's not very useful for a farmer and defeats the purpose of this being an automated system.
+
+
+Let’s add some sounds and visuals to tell our farmer where we are in the program. This will improve the user experience and reassure them that the farming system is still doing its job.
+
+
+## Challenge Step 1
+First, let’s use a sound to tell the user that the main loop has started. Go to the ``||music:Music||`` category and drag the ``||music:play tone middle C for 1 beat until done||`` block into the workspace. <br> Where should we place this block?
+
+
+~hint Tell me more!
+- This block should be the first block under the ``||loops:every 120000 ms||`` loop.
+- Now every time the sensor is about to check the moisture level, the user will hear a beep.
+hint~
+
+
+```blocks
+let pumpStop = 0
+let pumpStart = 0
+loops.everyInterval(120000, function () {
+    // @highlight
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    pumpStart = input.runningTime()
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+})
+```
+
+## Challenge Step 2
+Next, let’s use the LED ring to show that watering is in progress. Go to the ``||fwdSensors:Sensors||`` category and drag the ``||fwdSensors:set ledRing ‘0’ to red||`` and ``||fwdSensors:rotate ledRing pattern by ‘1’||`` block into the workspace. 
+
+
+~hint Tell me more!
+- The ``||fwdSensors:set ledRing '0' to red||`` block will light up a single LED on the LED ring. 
+- The ``||fwdSensors:rotate ledRing pattern by '1'||`` block will turn off the current LED and light up the one to its right.
+hint~
+
+
+
+
+## Challenge Step 3
+Your goal is to have the red dot move around the LED ring _while the plant is being watered_. Where should you place these two blocks to make this happen? <br>Try it out now. Don’t forget to download your code to test your changes.
+
+
+~hint Tell me more!
+- We want the single LED to light up at the start of the main loop - ``||loops:every 120000ms||``. Place this block under the ``||music:play tone||`` block.
+- To make the lit LED move around the LED ring *during* watering, we will add the ``||fwdSensors:rotate ledRing pattern by '1'||`` block inside the ``||loops:while||`` loop.
+- What happens if you place both blocks inside the ``||loops:while||`` loop? Test it out!
+hint~
+
+
+```blocks
+let pumpStop = 0
+let pumpStart = 0
+loops.everyInterval(120000, function () {
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
+    // @highlight
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    pumpStart = input.runningTime()
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+        // @highlight
+        fwdSensors.ledRing.fwdRotate(1)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    pumpStop = input.runningTime()
+})
+```
 
 
