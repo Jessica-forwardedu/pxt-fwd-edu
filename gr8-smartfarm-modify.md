@@ -89,3 +89,32 @@ Let's build a smart hydroponic farming system! We are going to do this in 3 part
 ## Build Step 13 @showdialog
 ![smartfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr8-smartfarm-sbs13.webp)
 
+## Activity 2: Code Your Project @showdialog
+We need to connect our project to the computer to make it come to life with code!
+
+The code will be the instructions that tell our micro:bit what to do.
+
+
+## Code Step 1 @showdialog
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+<br><img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
+
+
+## Code Step 2 @showdialog
+Click the three dots beside the  ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+
+
+## Code Step 3
+Click the ``|Download|`` button to download the starter code.
+
+## Activity 3: Modify Your Project @showdialog
+We are ready to **modify** the code of our smart farming system!
+
+**Tips**
+1. Follow the instructions at the top of the screen.
+2. Whenever you are ready for more information, click **‘Tell me more!’**
+3. If you need help with the code, click the lightbulb!
+
+
