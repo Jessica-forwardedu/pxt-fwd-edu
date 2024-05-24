@@ -117,4 +117,77 @@ We are ready to **modify** the code of our smart farming system!
 2. Whenever you are ready for more information, click **‘Tell me more!’**
 3. If you need help with the code, click the lightbulb!
 
+## Modify Step 1
+Let’s take a look at the instructions (aka the code!) that we’ve added to our smart farming system. Think about the following questions:
+- When do you think the water pump will turn on? When will it turn off?
+- What happens when you press B?
+
+
+## Modify Step 2
+Let’s test it out! Make sure the pump is in a cup with water, the moisture sensor is in an empty cup, and the tubing is secure. 
+
+
+Press A and watch what happens! Were your predictions right?
+
+
+~hint Tell me more!
+- Pressing A is an **event** that triggers the code below it in order.
+- As long as the moisture level remains below 50%, the pump stays on to water the plant. We do this using a ``||loops:while||`` loop. A ``||loops:while||`` loop repeats a series of instructions until a certain condition is met.
+- When the moisture level reaches 50% or more, the code *after* the ``||loops:while||`` loop is executed. This turns the pump off.
+hint~
+
+
+```block
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        // @highlight
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+    }
+    // @highlight
+    fwdMotors.pump.fwdSetActive(false)
+```
+
+
+## Modify Step 3
+Once the pump has stopped, press B. What happened? Was your prediction right?
+
+
+~hint Tell me more!
+- When you press B, you see a clock on the micro:bit’s LEDs. Then, you see a number. 
+- The number is how long the pump was running (in seconds). 
+- This was calculated by keeping track of the time the pump turned on and off using ``||variables:Variables||``. We subtracted the ``||variables:pumpStart||`` time from the ``||variables:pumpStop||`` time and divided it by 1000 to convert to seconds.
+hint~
+
+
+```blocks
+let pumpStart = 0
+let pumpStop = 0
+input.onButtonPressed(Button.A, function () {
+    // @highlight
+    pumpStart = input.runningTime()
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+        fwdMotors.pump.fwdSetActive(true)
+        basic.pause(500)
+    }
+    fwdMotors.pump.fwdSetActive(false)
+    // @highlight
+    pumpStop = input.runningTime()
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        # # # # #
+        # . # . #
+        # . # # #
+        # . . . #
+        # # # # #
+        `)
+    basic.clearScreen()
+    // @highlight
+    basic.showNumber(Math.round((pumpStop - pumpStart) / 1000))
+    basic.pause(2000)
+    basic.clearScreen()
+})
+
+
+```
 
