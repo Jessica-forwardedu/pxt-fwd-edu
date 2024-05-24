@@ -43,7 +43,7 @@ Let's build a smart hydroponic farming system! We are going to do this in 3 part
 2. **Add code** to bring it to life
 3. **Use** the system to learn how it works
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr8-smartfarm-projectrender.webp" width="300" height="300" alt="Project Render">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr8-smartfarm-projectrender.webp" width="400" height="400" alt="Project Render">
 
 
 ## Build Step 1 @showdialog
@@ -54,15 +54,12 @@ Let's build a smart hydroponic farming system! We are going to do this in 3 part
 ![smartfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr8-smartfarm-sbs02.webp)
 
 
-
 ## Build Step 3 @showdialog
 ![smartfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr8-smartfarm-sbs03.webp)
 
 
-
 ## Build Step 4 @showdialog
 ![smartfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr8-smartfarm-sbs04.webp)
-
 
 
 ## Build Step 5 @showdialog
